@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <?php foreach ($nets as $net):?>
                     <div class="card mb-3 blog-margin">
-                        <img src="uploads/<?=$net->img?>" class="card-img-top img-responsive" alt="fghdfgdfgdfgdf">
+                        <img src="/uploads/<?=$net->img?>" class="card-img-top img-responsive" alt="fghdfgdfgdfgdf">
                         <div class="card-body">
                             <h3 class="card-title "><h3 class="blog-title"><?=$net->title?></h3>
                                 <p class="card-text"><?=$net->description?></p>

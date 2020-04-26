@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="col-md-8 col-md-offset-0 col-sm-10 col-sm-offset-1">
 
                            <div class="card mb-3 blog-margin">
-                        <img src="uploads/<?=$model->img?>" class="card-img-top img-responsive" alt="">
+                        <img src="/uploads/<?=$model->img?>" class="card-img-top img-responsive" alt="">
                         <div class="card-body">
                             <h3 class="card-title "><h3 class="blog-title"><?=$model->title?></h3>
                                 <p class="card-text card-text-img"><?=$model->content?></p>

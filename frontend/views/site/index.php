@@ -117,8 +117,8 @@ $this->title = 'SAM-IT-TECHNOLOGY';
                     <div class="recent-work-pic">
                         <ul id="mixed-items">
                             <li class="mix category-1 col-md-4 col-xs-6" data-my-order="1">
-                                <a class="example-image-link" href="img/anatoliy.jpg" data-lightbox="example-set">
-                                    <img class="img-responsive" src="img/anatoliy.jpg" alt="">
+                                <a class="example-image-link" href="/img/anatoliy.jpg" data-lightbox="example-set">
+                                    <img class="img-responsive" src="/img/anatoliy.jpg" alt="">
                                     <div class="overlay">
                                         <h3>ANATOLIY.UZ</h3>
                                         <i class="ion-ios-plus-empty"></i>
@@ -126,8 +126,8 @@ $this->title = 'SAM-IT-TECHNOLOGY';
                                 </a>
                             </li>
                             <li class="mix category-1 col-md-4 col-xs-6" data-my-order="2">
-                                <a class="example-image-link" href="img/stem.jpg" data-lightbox="example-set">
-                                    <img class="img-responsive" src="img/stem.jpg" alt="">
+                                <a class="example-image-link" href="/img/stem.jpg" data-lightbox="example-set">
+                                    <img class="img-responsive" src="/img/stem.jpg" alt="">
                                     <div class="overlay">
                                         <h3>STEM.SAMDCHTI.UZ</h3>
                                         <i class="ion-ios-plus-empty"></i>
@@ -135,8 +135,8 @@ $this->title = 'SAM-IT-TECHNOLOGY';
                                 </a>
                             </li>
                             <li class="mix category-2 col-md-4 col-xs-6" data-my-order="3">
-                                <a class="example-image-link" href="img/tarmoq.jpg" data-lightbox="example-set">
-                                    <img class="img-responsive" src="img/tarmoq.jpg" alt="">
+                                <a class="example-image-link" href="/img/tarmoq.jpg" data-lightbox="example-set">
+                                    <img class="img-responsive" src="/img/tarmoq.jpg" alt="">
                                     <div class="overlay">
                                         <h3>СЕТЕВЫЕ УСЛУГИ</h3>
                                         <i class="ion-ios-plus-empty"></i>
@@ -144,8 +144,8 @@ $this->title = 'SAM-IT-TECHNOLOGY';
                                 </a>
                             </li>
                             <li class="mix category-3 col-md-4 col-xs-6" data-my-order="4">
-                                <a class="example-image-link" href="img/bot2.jpg" data-lightbox="example-set">
-                                    <img class="img-responsive" src="img/bot2.jpg" alt="">
+                                <a class="example-image-link" href="/img/bot2.jpg" data-lightbox="example-set">
+                                    <img class="img-responsive" src="/img/bot2.jpg" alt="">
                                     <div class="overlay">
                                         <h3>ANATOLIYCOMPANYBOT</h3>
                                         <i class="ion-ios-plus-empty"></i>
@@ -186,7 +186,7 @@ $this->title = 'SAM-IT-TECHNOLOGY';
             </div>
             <div class="col-md-4 col-sm-4 col-xs-6">
                 <div class="block wow fadeInLeft" data-wow-delay=".3s">
-                    <img src="img/team-img1.jpg" alt="">
+                    <img src="/img/team-img1.jpg" alt="">
                     <div class="team-overlay">
                         <h3>АХМЕДОВ ЭЛДОР <span>Веб программист</span></h3>
                         <span class="icon"><i class="ion-quote"></i></span>
@@ -196,7 +196,7 @@ $this->title = 'SAM-IT-TECHNOLOGY';
             </div>
             <div class="col-md-4  col-sm-4 col-xs-6">
                 <div class="block wow fadeInLeft" data-wow-delay=".6s">
-                    <img src="img/team-img2.jpg" alt="">
+                    <img src="/img/team-img2.jpg" alt="">
                     <div class="team-overlay">
                         <h3>ХАЙРИДДИНОВ АСАН <span>Системный админинистратор</span></h3>
                         <span class="icon"><i class="ion-quote"></i></span>
@@ -206,7 +206,7 @@ $this->title = 'SAM-IT-TECHNOLOGY';
             </div>
             <div class="col-md-4  col-sm-4 col-xs-6">
                 <div class="block wow fadeInLeft" data-wow-delay=".9s">
-                    <img src="img/team-img3.jpg" alt="">
+                    <img src="/img/team-img3.jpg" alt="">
                     <div class="team-overlay">
                         <h3>ROBERT SMITH <span>Product Designer</span></h3>
                         <span class="icon"><i class="ion-quote"></i></span>
@@ -293,7 +293,7 @@ $this->title = 'SAM-IT-TECHNOLOGY';
                         <?php foreach ($posts as $post):?>
                         <div class="block">
 
-                            <img src="uploads/<?=$post->img?>" alt="" class="img-responsive-blog-post" height="200px" width="100%">
+                            <img src="/uploads/<?=$post->img?>" alt="" class="img-responsive-blog-post" height="200px" width="100%">
                             <div class="content">
                                 <h4><a href="<?=Url::to(['post/view', 'id'=>$post->id])?>"><?=$post->title?></a></h4>
                                 <small><?=$post->created_at?></small>

@@ -41,7 +41,7 @@ AppAsset::register($this);
 
             <!-- logo -->
             <h1 class="navbar-brand">
-                <a href="<?=Url::to(['site/index'])?>"><img src="img/networking.svg" height="80" width="328" alt=""></a>
+                <a href="<?=Url::to(['site/index'])?>"><img src="/img/logo.png" height="50" width="50" alt=""></a>
             </h1>
             <!-- /logo -->
         </div>

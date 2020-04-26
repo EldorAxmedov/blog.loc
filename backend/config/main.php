@@ -14,7 +14,8 @@ return [
     'modules' => [],
     'components' => [
         'request' => [
-            'csrfParam' => '_csrf-backend',
+         'baseUrl'=>'/admin',
+         'csrfParam' => '_csrf-backend',
         ],
         'view' => [
             'theme' => [
@@ -47,9 +48,13 @@ return [
 
 
         'urlManager' => [
+            'scriptUrl'=>'/backend/index.php',
             'enablePrettyUrl' => false,
             'showScriptName' => true,
             'rules' => [
+           '<controller:\w+>/<id:\d+>' => '<controller>/view',
+                '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
+                '<controller:\w+>/<action:\w+>' => '<controller>/<action>'
             ],
         ],
 

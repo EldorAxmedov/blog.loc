@@ -228,6 +228,7 @@ header .navbar {
   background-size: cover;
   padding: 250px 0;
   position: relative;
+  text-align: center;
 }
 #banner:before {
   position: absolute;
@@ -263,6 +264,10 @@ header .navbar {
   padding: 10px 22px;
   font-size: 14px;
   transition: 0.3s;
+}
+#banner .block .btn-learn i{
+  margin-right:10px;
+  font-size: 20px;
 }
 #banner .block .btn-learn:hover {
   border-color: #3498db;

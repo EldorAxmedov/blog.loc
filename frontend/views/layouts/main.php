@@ -40,7 +40,7 @@ AppAsset::register($this);
 
             <!-- logo -->
             <h1 class="navbar-brand">
-                <a href="<?=Url::to(['site/index'])?>"><img src="img/networking.svg" height="80" width="328" alt=""></a>
+                <a href="<?=Url::to(['site/index'])?>"><img src="/img/logo.png" height="50" width="50" alt=""></a>
             </h1>
             <!-- /logo -->
         </div>
@@ -51,6 +51,8 @@ AppAsset::register($this);
                 <li><a href="<?=Url::to(['site/index'])?>">Главная</a></li>
                 <li><a href="<?=Url::to(['post/index'])?>">Блог</a></li>
                 <li><a href="#contact-form">Контакты</a></li>
+                <li><a href="<?=Url::to(['site/login'])?>">Login</a></li>
+                <li><a href="<?=Url::to(['site/signup'])?>">Sign</a></li>
             </ul>
         </nav>
         <!-- /main nav -->
@@ -63,22 +65,11 @@ AppAsset::register($this);
     <section id="banner">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <div class="block">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <h1></h1>
-                        <h2></h2>
-                        <div class="buttons">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <div class="block">
+                    <p style="color:white; text-transform: uppercase; margin-bottom:20px; font-size:20px;">Наш телеграм канал<p>
+<a href="" class="btn-learn"><i class="fa fa-telegram"></i>Telegram</a>
+</div>
+         </div>
         </div>
         <div class="scrolldown">
             <a id="scroll" href="#features" class="scroll"></a>
@@ -107,7 +98,7 @@ AppAsset::register($this);
             <div class="row">
                 <div class="col-md-12">
                     <div class="block">
-                        <a href="#"><img src="img/Logo_footer.png" width="320" height="220" alt=""></a>
+                        <a href="#"><img src="/img/Logo_footer.png" width="200" height="130" alt=""></a>
                         <p>Все права защищены © 2020</p>
                     </div>
                 </div>

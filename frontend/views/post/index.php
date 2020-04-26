@@ -6,7 +6,7 @@ use yii\widgets\LinkPager;
 
                 <?php foreach ($alls as $all):?>
                 <div class="card mb-3 blog-margin">
-                    <img src="uploads/<?=$all->img?>" class="card-img-top img-responsive" alt="fghdfgdfgdfgdf">
+                    <img src="/uploads/<?=$all->img?>" class="card-img-top img-responsive">
                     <div class="card-body">
                         <h3 class="card-title "><h3 class="blog-title"><?=$all->title?></h3>
                         <p class="card-text"><?=$all->description?></p>
