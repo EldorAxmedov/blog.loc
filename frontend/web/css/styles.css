@@ -1242,8 +1242,8 @@ ul{
 /*---------------------------- 9. video-area end --------------------------*/
 /*-----------10. team-area start --------------*/
 .team-wrap{
-	padding-bottom: 90px;
-	position: relative;
+    padding-bottom: 30px;
+    position: relative;
 	z-index: 1;
 	overflow: hidden;
 }
