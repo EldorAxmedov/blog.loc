@@ -6,7 +6,7 @@ use yii\helpers\Url;
 
 $this->title = 'SAM-IT-TECHNOLOGY';
 ?>
- <section class="service-area home2-service-area ptb-140">
+ <section class="service-area home2-service-area ptb-140" id="services">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 wow fadeInUp">
@@ -15,7 +15,8 @@ $this->title = 'SAM-IT-TECHNOLOGY';
                             <p>ИТ-услуги — это перечень готовых способов и решений квалифицированной поддержки в области информационных технологий, если говорить простыми словами.</p>
                         </div>
                     </div>
-                </div>
+				</div>
+				</div>
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp clearfix" data-wow-delay=".1s">
                         <div class="service-wrap">
@@ -35,16 +36,16 @@ $this->title = 'SAM-IT-TECHNOLOGY';
                             </div>
                         </div>
 					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp clearfix" data-wow-delay=".6s">
+					<div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp clearfix" data-wow-delay=".3s">
                         <div class="service-wrap">
                             <div class="service-content">
-                                <h3>Обслуживание программного обеспечения</h3>
-                                <p>Компьютер без программного обеспечения ни что иное как простой набор бесполезного «железа». Программное обеспечение – это комплекс программ, направленный на организацию и оптимизацию работы устройства.</p>
+                                <h3>Обслуживание видеонаблюдения</h3>
+                                <p>Мы готовы, вам предложить низкие цены на оборудования по видеонаблюдения и рассчитать монтаж видеонаблюдения на вашем объекте.</p>
                                 <a href="single-service.html">Подробнее</a>
                             </div>
                         </div>
-                    </div>
-            	</div>
+					</div>
+				</div>
 				<div class="row">
                     <div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp clearfix" data-wow-delay=".4s">
                         <div class="service-wrap">
@@ -64,21 +65,21 @@ $this->title = 'SAM-IT-TECHNOLOGY';
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp clearfix" data-wow-delay=".3s">
+                   	<div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp clearfix" data-wow-delay=".6s">
                         <div class="service-wrap">
                             <div class="service-content">
-                                <h3>Обслуживание видеонаблюдения</h3>
-                                <p>Мы готовы, вам предложить низкие цены на оборудования по видеонаблюдения и рассчитать монтаж видеонаблюдения на вашем объекте.</p>
+                                <h3>Обслуживание программного обеспечения</h3>
+                                <p>Компьютер без программного обеспечения ни что иное как простой набор бесполезного «железа». Программное обеспечение – это комплекс программ, направленный на организацию и оптимизацию работы устройства.</p>
                                 <a href="single-service.html">Подробнее</a>
                             </div>
                         </div>
-					</div>
-                </div>
-            </div>
+                    </div>
+            	</div>
+              </div>
         </section>
         <!-- .service-area end -->
         <!-- about-area start -->
-		<section class="about-area pb-140 about-area2">
+		<section class="about-area pb-140 about-area2" id="about">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-xs-12 wow fadeInLeft">
@@ -178,22 +179,21 @@ $this->title = 'SAM-IT-TECHNOLOGY';
 				<div class="row wow fadeInUp">
 					<div class="col-xs-12">
 						<div class="portfolio-menu text-center">
-							<button class="active" data-filter="*">Все</button>
-							<button data-filter=".website">Веб сайты</button>
+							<button class="active" data-filter=".website">Веб сайты</button>
 							<button data-filter=".responsiv">Сетевое оборудование</button>
-							<button data-filter=".minimal">Видеонаблюдение</button>
+							<button data-filter=".camera">Видеонаблюдение</button>
 							<button data-filter=".clean">Автоматизация</button>
 						</div>
 					</div>
 				</div>
 				<div class="row grid">
-                    <div class="col-md-4 portfolio website col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".1s">
+                    <div class="col-md-6 portfolio website col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".1s">
 						<div class="portfolio-wrap">
 							<div class="overlay">
 								<a class="popup" href="/images/portfolio/4.jpg">
 									<i class="fa fa-link"></i>
 								</a>
-								<h3>Front End Design</h3>
+								<h3>Frontend qismi</h3>
 								<p>The majority have suffered alteration in some form</p>
 							</div>
 							<div class="portfolio-img">
@@ -201,24 +201,24 @@ $this->title = 'SAM-IT-TECHNOLOGY';
 							</div>
 						</div>
 					</div>
-					<div class="col-md-8 portfolio clean col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".2s">
+					<div class="col-md-6 portfolio website col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".2s">
 						<div class="portfolio-wrap">
 							<div class="overlay">
-								<a class="popup" href="/images/portfolio/portfolio3/1.jpg">
+								<a class="popup" href="/images/portfolio/portfolio3/1.png">
 									<i class="fa fa-link"></i>
 								</a>
 								<h3>Web Design</h3>
 								<p>The majority have suffered alteration in some form</p>
 							</div>
 							<div class="portfolio-img">
-								<img src="/images/portfolio/portfolio3/1.jpg" alt="" />
+								<img src="/images/portfolio/portfolio3/1.png" alt="" />
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4 portfolio  responsiv col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".3s">
 						<div class="portfolio-wrap">
 							<div class="overlay">
-								<a class="popup" href="/images/portfolio/6.jpg">
+								<a class="popup" href="/images/portfolio/1.png">
 									<i class="fa fa-link"></i>
 								</a>
 								<h3>Back End Development</h3>
@@ -257,17 +257,17 @@ $this->title = 'SAM-IT-TECHNOLOGY';
 							</div>
 						</div>
 					</div>
-                    <div class="col-md-8 portfolio website col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".6s">
+                    <div class="col-md-8 portfolio camera col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".6s">
 						<div class="portfolio-wrap">
 							<div class="overlay">
-								<a class="popup" href="/images/portfolio/portfolio3/2.jpg">
+								<a class="popup" href="/images/portfolio/portfolio3/2.png">
 									<i class="fa fa-link"></i>
 								</a>
 								<h3>Web Design</h3>
 								<p>The majority have suffered alteration in some form</p>
 							</div>
 							<div class="portfolio-img">
-								<img src="/images/portfolio/portfolio3/2.jpg" alt="" />
+								<img src="/images/portfolio/portfolio3/2.png" alt="" />
 							</div>
 						</div>
 					</div>
@@ -298,7 +298,7 @@ $this->title = 'SAM-IT-TECHNOLOGY';
 		<!-- video-area end -->
 
         <!-- team-area start -->
-        <section class="team-area team-area2 team-area3" style="margin-top:30px;">
+        <section class="team-area team-area2 team-area3" style="margin-top:30px;" id="team">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 wow fadeInUp">

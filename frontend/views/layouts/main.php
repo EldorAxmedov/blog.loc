@@ -39,38 +39,20 @@ AppAsset::register($this);
             </div>
         </div>
         <!-- preloder-wrap -->
-        <!-- search-area -->
-        <div class="search-area">
-            <span class="closs-btn">Close</span>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <div class="search-form">
-                            <form action="#">
-                                <input type="text" name="search" placeholder="Search Here">
-                                <button type="button" name="button" class="btn-style">Search</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- search-area -->
-		<!-- heared area start -->
+       	<!-- heared area start -->
 		<header class="header-area header-area2">
             <div class="header-top">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-sm-8 col-xs-12">
                             <div class="header-top-left">
-                                <p>We are landscaping company, offer various landscape services</p>
+                                <p>Мы ИТ-компания, предлагаем различные ИТ-услуги</p>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-4 col-xs-12">
                             <div class="header-top-right text-right">
                                 <ul>
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                     <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                     <li><a href="#"><i class="fa fa-youtube"></i></a></li>
@@ -85,31 +67,27 @@ AppAsset::register($this);
     				<div class="row">
                         <div class="col-md-3 col-sm-8 col-xs-6">
     						<div class="logo">
-    							<h1><a href="index.html">Martxa</a></h1>
+    							<h1><a href="#">SAMITGROUP</a></h1>
     						</div>
     					</div>
     					<div class="col-md-8 hidden-sm hidden-xs">
     						<div class="mainmenu">
                                 <ul id="navigation">
-    								<li class="active"><a href="index.html">Home</a>
+    								<li class="active"><a href="#">Home</a>
     									</li>
-    								<li><a href="about.html">About</a>
+    								<li><a href="#services">Услуги</a>
     									                                    </li>
-    								<li><a href="service.html">Service</a>
+    								<li><a href="#about">О нас</a>
     									
     								</li>
-    								<li><a href="team.html">Team </a>
+    								<li><a href="#team">Команда </a>
     									</li>
-    										
-    								<li><a href="portfolio.html">Portfolio</a>
-                                        
-                                    </li>
-    								<li><a href="blog.html">Blog</a>
+    									
+    								
+    								<li><a href="#blog">Последние новости</a>
                                        
     								</li>
-    								<li><a href="contact.html">Contact</a></li>
-    								<li><a href="#">Pages</a>
-    									</li>
+    								
                            			</ul>
     						</div>
     					</div>
@@ -144,11 +122,11 @@ AppAsset::register($this);
 								<div class="container">
 									<div class="row">
 										<div class="col-xs-12 col-md-8 col-md-offset-2">
-											<h2>Welcome to our Martxa</h2>
-											<p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+											<h2>Веб-разработка</h2>
+											<p>Разработка качественных сайтов: визитки, лэндинги, интернет-магазины, каталоги, блоги. Подбор имени сайта, регистрация, размещение на хостинге.</p>
 											<ul>
-												<li><a href="#">Read More</a></li>
-												<li><a href="#">Get Started</a></li>
+												<li><a href="#">Подробно</a></li>
+												
 											</ul>
 										</div>
 									</div>
@@ -165,11 +143,34 @@ AppAsset::register($this);
 								<div class="container">
 									<div class="row">
 										<div class="col-xs-12 col-md-8 col-md-offset-2">
-											<h2>Hello i am Martxa</h2>
-											<p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+											<h2>Сеть и сетевое оборудование</h2>
+											<p>Наши специалисты осуществляют монтаж любой сложности и структуры. От компьютерной сети небольшого офиса до кабельных сетей комплекса офисных зданий.</p>
 											<ul>
-												<li><a href="#">Get Started</a></li>
-												<li><a href="#">Read More</a></li>
+                                            <ul>
+												<li><a href="#">Подробно</a></li>
+												
+											</ul>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="slider-items">
+					<img src="/images/slider/3.jpg" alt="" class="slider">
+					<div class="slider-content text-center">
+						<div class="table">
+							<div class="table-cell">
+								<div class="container">
+									<div class="row">
+										<div class="col-xs-12 col-md-8 col-md-offset-2">
+											<h2>Обслуживание видеонаблюдения</h2>
+											<p>Мы готовы, вам предложить низкие цены на оборудования по видеонаблюдения и рассчитать монтаж видеонаблюдения на вашем объекте.</p>
+											<ul>
+												<li><a href="#">Подробно</a></li>
+												
 											</ul>
 										</div>
 									</div>
@@ -191,11 +192,11 @@ AppAsset::register($this);
 					<div class="row">
 						<div class="col-md-3 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".1s">
 							<div class="footer-widget footer-logo">
-                                <h1>Martxa</h1>
-                                <p>Lor separat existentie es un myth. Por scientie, musica, sport etc, litot  usa li sam larLor separat existentie es un myth existentie.</p>
+                                <h1>SAMITGROUP</h1>
+                                <p>Мы ИТ-компания, предлагаем различные ИТ-услуги</p>
                                 <ul>
-                                    <li><i class="fa fa-phone"></i> +455 5475 6645</li>
-                                    <li><i class="fa fa-envelope"></i> info@yourdomail.com</li>
+                                    <li><i class="fa fa-phone"></i> +99897 9176653</li>
+                                    <li><i class="fa fa-envelope"></i> samitgroup@gmail.com</li>
                                 </ul>
 							</div>
 						</div>
