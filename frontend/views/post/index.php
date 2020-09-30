@@ -4,19 +4,53 @@ use yii\widgets\LinkPager;
 
 ?>
 
-                <?php foreach ($alls as $all):?>
-                <div class="card mb-3 blog-margin">
-                    <img src="/uploads/<?=$all->img?>" class="card-img-top img-responsive">
-                    <div class="card-body">
-                        <h3 class="card-title "><h3 class="blog-title"><?=$all->title?></h3>
-                        <p class="card-text"><?=$all->description?></p>
-                        <p class="card-text"><i class="fa fa-clock-o"> <?=$all->created_at?></i></p>
-                        <a href="<?=Url::to(['post/view', 'id'=>$all->id])?>" class="btn btn-read-blog">ПОДРОБНЕЕ</a>
-                         <hr class="blog-hr">
+<section class="blog-area ptb-140 bg-1">
+            <div class="container">
+                <div class="row">
+                    <?php foreach ($alls as $all):?>
+                    <div class="col-sm-6 col-xs-12 col fea">
+                        <div class="blog-wrap mb-30">
+                            <div class="blog-img">
+                                <img src="/uploads/<?=$all->img?>">
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-user"></i> Admin</a></li>
+                                        <li><a href="#"><i class="fa fa-comment"></i> 5 Comment</a></li>
+                                        <li><a href="#"><i class="fa fa-heart"></i> 5 Love</a></li>
+                                    </ul>
+                                </div>
+                                <h3><a href="<?=Url::to(['post/view', 'id'=>$all->id])?>"><?=$all->title?></a></h3>
+                                <p><?=$all->description?></p>
+                                <a href="<?=Url::to(['post/view', 'id'=>$all->id])?>" class="btn-style">ПОДРОБНЕЕ</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <?php endforeach;?>
-<div style="margin-left:35%">
-<?php echo LinkPager::widget(['pagination' => $pagination,
-]);?>
-</div>
+                    <?php endforeach;?>
+                    <div class="col-xs-12">
+                        <div class="pagination-wrap">
+                          <?php echo LinkPager::widget([
+                            'pagination' => $pagination,
+                            'options'=>[
+                                'firstPageLabel' => '',
+                                'lastPageLabel' => '',
+                                'prevPageLabel'=>'',
+                                'nextPageLabel' => '',
+                                
+
+                            ],
+                    ]);?> 
+                        </div>
+
+                    </div>
+                 </div>
+               </div>
+        </section>
+
+
+
+                
+
+
+

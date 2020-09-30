@@ -53,7 +53,6 @@ AppAsset::register($this);
                             <div class="header-top-right text-right">
                                 <ul>
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                     <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                     <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                                 </ul>
@@ -73,21 +72,7 @@ AppAsset::register($this);
     					<div class="col-md-8 hidden-sm hidden-xs">
     						<div class="mainmenu">
                                 <ul id="navigation">
-    								<li class="active"><a href="#">Home</a>
-    									</li>
-    								<li><a href="#services">Услуги</a>
-    									                                    </li>
-    								<li><a href="#about">О нас</a>
-    									
-    								</li>
-    								<li><a href="#team">Команда </a>
-    									</li>
-    									
-    								
-    								<li><a href="#blog">Последние новости</a>
-                                       
-    								</li>
-    								
+    							   								
                            			</ul>
     						</div>
     					</div>
@@ -190,7 +175,7 @@ AppAsset::register($this);
 			<div class="footer-top">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-3 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".1s">
+						<div class="col-md-6 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".1s">
 							<div class="footer-widget footer-logo">
                                 <h1>SAMITGROUP</h1>
                                 <p>Мы ИТ-компания, предлагаем различные ИТ-услуги</p>
@@ -200,44 +185,19 @@ AppAsset::register($this);
                                 </ul>
 							</div>
 						</div>
-                        <div class="col-md-3 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".2s">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".2s">
                             <div class="footer-widget footer-menu">
-                                <h2>Footer Menu</h2>
+                                <h2>Меню</h2>
                                 <ul>
-                                    <li><a href="faq.html">Faq</a></li>
-                                    <li><a href="about.html">About us</a></li>
-                                    <li><a href="#">Customer Insights</a></li>
-                                    <li><a href="service.html">FInancial Service</a></li>
-                                    <li><a href="#">Business Devlopment</a></li>
-                                    <li><a href="">Project Management</a></li>
+                                    <li><a href="#about">О нас</a></li>
+                                    <li><a href="#xizmatlar">Наши услуги</a></li>
+                                    <li><a href="#portfolio">Наши работы</a></li>
+                                    <li><a href="#team">Наша команда</a></li>
+                                    <li><a href="#blog">Последние новости</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".3s">
-                            <div class="footer-widget instagram-wrap">
-                                <h2>Instagram</h2>
-                                <ul>
-                                    <li><a href="#"><img src="/images/instagram/1.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="/images/instagram/2.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="/images/instagram/3.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="/images/instagram/4.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="/images/instagram/5.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="/images/instagram/6.jpg" alt=""></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".4s">
-                            <div class="footer-widget quick-contact">
-                                <h2>Quick Contact</h2>
-                                <form action="#">
-                                    <input type="text" placeholder="Full Name">
-                                    <input type="email" placeholder="Email">
-                                    <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Massage"></textarea>
-                                    <button type="button" name="button" class="btn-style">Send</button>
-                                </form>
-                            </div>
-                        </div>
-					</div>
+                	</div>
 				</div>
 			</div>
             <div class="footer-bottom text-center">

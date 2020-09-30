@@ -6,19 +6,18 @@ use yii\helpers\Url;
 
 $this->title = 'SAM-IT-TECHNOLOGY';
 ?>
- <section class="service-area home2-service-area ptb-140" id="services">
+ <section class="service-area home2-service-area ptb-140" id="xizmatlar">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 wow fadeInUp">
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 wow fadeInUp" style="visibility: visible;">
                         <div class="section-title text-center">
                             <h2>Наши услуги</h2>
                             <p>ИТ-услуги — это перечень готовых способов и решений квалифицированной поддержки в области информационных технологий, если говорить простыми словами.</p>
                         </div>
                     </div>
-				</div>
-				</div>
+                </div>
                 <div class="row">
-                    <div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp clearfix" data-wow-delay=".1s">
+                    <div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s;">
                         <div class="service-wrap">
                             <div class="service-content">
                                 <h3>Веб-разработка</h3>
@@ -27,7 +26,7 @@ $this->title = 'SAM-IT-TECHNOLOGY';
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp clearfix" data-wow-delay=".2s">
+                    <div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s;">
                         <div class="service-wrap">
                             <div class="service-content">
                                 <h3>Сеть и сетевое оборудование</h3>
@@ -35,8 +34,8 @@ $this->title = 'SAM-IT-TECHNOLOGY';
                                 <a href="single-service.html">Подробнее</a>
                             </div>
                         </div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp clearfix" data-wow-delay=".3s">
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s;">
                         <div class="service-wrap">
                             <div class="service-content">
                                 <h3>Обслуживание видеонаблюдения</h3>
@@ -44,38 +43,9 @@ $this->title = 'SAM-IT-TECHNOLOGY';
                                 <a href="single-service.html">Подробнее</a>
                             </div>
                         </div>
-					</div>
-				</div>
-				<div class="row">
-                    <div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp clearfix" data-wow-delay=".4s">
-                        <div class="service-wrap">
-                            <div class="service-content">
-                                <h3>Обслуживание серверов</h3>
-                                <p>Настройка и обслуживание серверов – это услуги по комплексной поддержке работы серверного оборудования компании, включающие постоянный мониторинг состояния, профилактические работы и применение экстренных мер по устранению неисправностей.</p>
-                                <a href="single-service.html">Подробнее</a>
-                            </div>
-                        </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp clearfix" data-wow-delay=".5s">
-                        <div class="service-wrap">
-                            <div class="service-content">
-                                <h3>Автоматизация</h3>
-                                <p>Основной целью автоматизации является повышение качества исполнения процесса. Автоматизированный процесс обладает более стабильными характеристиками, чем процесс, выполняемый в ручном режиме.</p>
-                                <a href="single-service.html">Подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-                   	<div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp clearfix" data-wow-delay=".6s">
-                        <div class="service-wrap">
-                            <div class="service-content">
-                                <h3>Обслуживание программного обеспечения</h3>
-                                <p>Компьютер без программного обеспечения ни что иное как простой набор бесполезного «железа». Программное обеспечение – это комплекс программ, направленный на организацию и оптимизацию работы устройства.</p>
-                                <a href="single-service.html">Подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-            	</div>
-              </div>
+                   </div>
+            </div>
         </section>
         <!-- .service-area end -->
         <!-- about-area start -->
@@ -164,116 +134,97 @@ $this->title = 'SAM-IT-TECHNOLOGY';
 			</div>
 		</section>
 		<!-- fanfact-area end -->
-
-		<!-- porftolio-area start -->
-		<section class="porftolio-area ptb-70">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 wow fadeInUp">
-						<div class="section-title text-center">
-							<h2>Наши последние работы</h2>
-							<p>the majority have suffered alteration in some form, by injected humour, or randomised. by injected humour, or randomised.</p>
-						</div>
-					</div>
-				</div>
-				<div class="row wow fadeInUp">
-					<div class="col-xs-12">
-						<div class="portfolio-menu text-center">
-							<button class="active" data-filter=".website">Веб сайты</button>
-							<button data-filter=".responsiv">Сетевое оборудование</button>
-							<button data-filter=".camera">Видеонаблюдение</button>
-							<button data-filter=".clean">Автоматизация</button>
-						</div>
-					</div>
-				</div>
-				<div class="row grid">
-                    <div class="col-md-6 portfolio website col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".1s">
-						<div class="portfolio-wrap">
-							<div class="overlay">
-								<a class="popup" href="/images/portfolio/4.jpg">
-									<i class="fa fa-link"></i>
-								</a>
-								<h3>Frontend qismi</h3>
-								<p>The majority have suffered alteration in some form</p>
-							</div>
-							<div class="portfolio-img">
-								<img src="/images/portfolio/4.jpg" alt="" />
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 portfolio website col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".2s">
-						<div class="portfolio-wrap">
-							<div class="overlay">
-								<a class="popup" href="/images/portfolio/portfolio3/1.png">
-									<i class="fa fa-link"></i>
-								</a>
-								<h3>Web Design</h3>
-								<p>The majority have suffered alteration in some form</p>
-							</div>
-							<div class="portfolio-img">
-								<img src="/images/portfolio/portfolio3/1.png" alt="" />
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 portfolio  responsiv col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".3s">
-						<div class="portfolio-wrap">
-							<div class="overlay">
-								<a class="popup" href="/images/portfolio/1.png">
-									<i class="fa fa-link"></i>
-								</a>
-								<h3>Back End Development</h3>
-								<p>The majority have suffered alteration in some form</p>
-							</div>
-							<div class="portfolio-img">
-								<img src="/images/portfolio/6.jpg" alt="" />
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 portfolio minimal col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".4s">
-						<div class="portfolio-wrap">
-							<div class="overlay">
-								<a class="popup" href="/images/portfolio/portfolio2/5.jpg">
-									<i class="fa fa-link"></i>
-								</a>
-								<h3>Photoshop</h3>
-								<p>The majority have suffered alteration in some form</p>
-							</div>
-							<div class="portfolio-img">
-								<img src="/images/portfolio/portfolio2/5.jpg" alt="" />
-							</div>
-						</div>
-					</div>
-                    <div class="col-md-4 portfolio minimal responsiv col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".5s">
-						<div class="portfolio-wrap">
-							<div class="overlay">
-								<a class="popup" href="/images/portfolio/portfolio2/2.jpg">
-									<i class="fa fa-link"></i>
-								</a>
-								<h3>Web Development</h3>
-								<p>The majority have suffered alteration in some form</p>
-							</div>
-							<div class="portfolio-img">
-								<img src="/images/portfolio/portfolio2/2.jpg" alt="" />
-							</div>
-						</div>
-					</div>
-                    <div class="col-md-8 portfolio camera col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".6s">
-						<div class="portfolio-wrap">
-							<div class="overlay">
-								<a class="popup" href="/images/portfolio/portfolio3/2.png">
-									<i class="fa fa-link"></i>
-								</a>
-								<h3>Web Design</h3>
-								<p>The majority have suffered alteration in some form</p>
-							</div>
-							<div class="portfolio-img">
-								<img src="/images/portfolio/portfolio3/2.png" alt="" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+ 	 <!-- porftolio-area start -->
+        <section class="porftolio-area ptb-100 portfolio-area3" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="portfolio-menu text-center">
+                            <button class="active" data-filter="*">Все</button>
+                            <button data-filter=".website">Веб сайты</button>
+                            <button data-filter=".responsiv">Сетевое оборудование</button>
+                            <button data-filter=".minimal">Видеонаблюдение</button>
+                         </div>
+                    </div>
+                </div>
+                <div class="row grid">
+                    <div class="col-xs-12">
+                         <div class="portfolio website col">
+                            <div class="portfolio-wrap">
+                                <div class="overlay">
+                                    <a class="popup" href="/images/portfolio/2.jpg">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                    <h3>Веб сайт</h3>
+                                    <p>Качественный сайт, который мы для вас разработаем.</p>
+                                </div>
+                                <div class="portfolio-img">
+                                    <img src="/images/portfolio/2.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                       <div class="portfolio website col">
+                            <div class="portfolio-wrap">
+                                <div class="overlay">
+                                    <a class="popup" href="/images/portfolio/2.jpg">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                    <h3>Веб сайт</h3>
+                                    <p>Качественный сайт, который мы для вас разработаем.</p>
+                                </div>
+                                <div class="portfolio-img">
+                                    <img src="/images/portfolio/2.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio responsiv col">
+                            <div class="portfolio-wrap">
+                                <div class="overlay">
+                                    <a class="popup" href="/images/portfolio/5.jpg">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                    <h3>Сетевое оборудование</h3>
+                                    <p>Мы предлагаем нашим клиентам широкий спектр сетевых услуг.</p>
+                                </div>
+                                <div class="portfolio-img">
+                                    <img src="/images/portfolio/5.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                                               
+                        <div class="portfolio minimal col">
+                            <div class="portfolio-wrap">
+                                <div class="overlay">
+                                    <a class="popup" href="/images/portfolio/1.jpg">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                    <h3>Видеонаблюдение</h3>
+                                    <p>Широкий спектр услуг по проектированию, обслуживанию и монтажу систем видеонаблюдения.</p>
+                                </div>
+                                <div class="portfolio-img">
+                                    <img src="/images/portfolio/1.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio responsiv col">
+                            <div class="portfolio-wrap">
+                                <div class="overlay">
+                                    <a class="popup" href="/images/portfolio/5.jpg">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                    <h3>Сетевое оборудование</h3>
+                                    <p>Мы предлагаем нашим клиентам широкий спектр сетевых услуг.</p>
+                                </div>
+                                <div class="portfolio-img">
+                                    <img src="/images/portfolio/5.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        
+                </div>
+                
+            </div>
+        </section>
 		<!-- porftolio-area end -->
 
 		<!-- video-area start -->
@@ -321,8 +272,8 @@ $this->title = 'SAM-IT-TECHNOLOGY';
                                 </ul>
                             </div>
                             <div class="team-content">
-                                <h3>Alex Jeson</h3>
-                                <p>Marketing</p>
+                                <h3>Ахмедов Элдор</h3>
+                                <p>Веб разработчик</p>
                             </div>
                         </div>
                     </div>
@@ -338,8 +289,8 @@ $this->title = 'SAM-IT-TECHNOLOGY';
                                 <img src="/images/team/team2/2.jpg" alt="" />
                             </div>
                             <div class="team-content">
-                                <h3>Connor Charles</h3>
-                                <p>Founder</p>
+                                <h3>Хайриддинов Асан</h3>
+                                <p>Сетевой администратор</p>
                             </div>
                         </div>
                     </div>
@@ -355,8 +306,8 @@ $this->title = 'SAM-IT-TECHNOLOGY';
                                 <img src="/images/team/team2/3.jpg" alt="" />
                             </div>
                             <div class="team-content">
-                                <h3>Robert Kyle</h3>
-                                <p>Sales Head</p>
+                                <h3>Туропов Тохир</h3>
+                                <p>Системный администратор</p>
                             </div>
                         </div>
                     </div>
@@ -372,8 +323,8 @@ $this->title = 'SAM-IT-TECHNOLOGY';
                                 <img src="/images/team/team2/4.jpg" alt="" />
                             </div>
                             <div class="team-content">
-                                <h3>Brayden Shar</h3>
-                                <p>The Boss</p>
+                                <h3>Рузимурод</h3>
+                                <p>Системный администратор</p>
                             </div>
                         </div>
                     </div>

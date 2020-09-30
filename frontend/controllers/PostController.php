@@ -16,7 +16,7 @@ use yii\filters\VerbFilter;
 class PostController extends Controller
 {
 
-    public $layout = '@frontend/views/post/main.php';
+    
     /**
      * {@inheritdoc}
      */
@@ -29,7 +29,7 @@ class PostController extends Controller
     {
         $alls=Post::find()->orderBy(['id'=>SORT_DESC]);
         $pagination = new Pagination([
-            'defaultPageSize'=>3,
+            'defaultPageSize'=>5,
             'totalCount'=>$alls->count(),
         ]);
          $alls = $alls->offset($pagination->offset)
@@ -44,61 +44,7 @@ class PostController extends Controller
         ]);
     }
 
-    public function actionNet()
-    {
-       $nets=Post::find()->where(['category_id'=>2])->all();
-
-        return $this->render('net', [
-            'nets' => $nets,
-
-
-        ]);
-    }
-    public function actionComputer()
-    {
-        $computers=Post::find()->where(['category_id'=>4])->all();
-
-        return $this->render('computer', [
-            'computers' => $computers,
-
-
-        ]);
-    }
-
-    public function actionSite()
-    {
-        $sites=Post::find()->where(['category_id'=>1])->all();
-
-        return $this->render('site', [
-            'sites' => $sites,
-
-
-        ]);
-    }
-    public function actionGraphic()
-    {
-        $graphics=Post::find()->where(['category_id'=>5])->all();
-
-        return $this->render('graphic', [
-            'graphics' => $graphics,
-
-
-        ]);
-    }
-
-    public function actionProgramming()
-    {
-        $programs=Post::find()->where(['category_id'=>6])->all();
-
-        return $this->render('programming', [
-            'programs' => $programs,
-
-
-        ]);
-    }
-
-
-    /**
+       /**
      * Displays a single Post model.
      * @param integer $id
      * @return mixed

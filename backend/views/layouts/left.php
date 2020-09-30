@@ -31,9 +31,9 @@
                 'options' => ['class' => 'sidebar-menu tree', 'data-widget'=> 'tree'],
                 'items' => [
                     ['label' => 'Категории', 'options' => ['class' => 'header']],
-                    ['label' => 'Категории', 'icon' => 'file-code-o', 'url' => ['category/']],
-                    ['label' => 'Посты', 'icon' => 'file-code-o', 'url' => ['post/']],
-                    ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
+                    ['label' => 'Категории', 'icon' => 'file-code-o', 'url' => ['/post/category']],
+                    ['label' => 'Посты', 'icon' => 'file-code-o', 'url' => ['/post/']],
+                    ['label' => 'Login', 'url' => ['/site/login'], 'visible' => Yii::$app->user->isGuest],
 
                 ],
             ]

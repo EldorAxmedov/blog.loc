@@ -1669,6 +1669,10 @@ ul{
 .blog-content a.btn-style{
 	border:1px solid #296dc1;
 }
+.fea:nth-child(2n+1){
+    content: "";
+    clear: both;
+}
 /*------------------14. blog-area end --------------------*/
 
 /*------------------15. newsletter-area start --------------------*/
