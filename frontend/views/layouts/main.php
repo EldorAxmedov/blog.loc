@@ -38,10 +38,26 @@ AppAsset::register($this);
                 <div class="child-common child1"></div>
             </div>
         </div>
-        <!-- preloder-wrap -->
-       	<!-- heared area start -->
-		<header class="header-area header-area2">
-            <div class="header-top">
+        <!-- search-area -->
+        <div class="search-area">
+            <span class="closs-btn">Закрыть</span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="search-form">
+                            <form action="#">
+                                <input type="text" name="search" placeholder="Search Here">
+                                <button type="button" name="button" class="btn-style">Поиск</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- search-area -->
+        <!-- heared area start -->
+        <header class="header-area">
+            <div class="header-top bg-2">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-sm-8 col-xs-12">
@@ -52,50 +68,103 @@ AppAsset::register($this);
                         <div class="col-md-6 col-sm-4 col-xs-12">
                             <div class="header-top-right text-right">
                                 <ul>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                    <li><a href="https://www.facebook.com/samittechnology"><i class="fa fa-facebook"></i></a></li>
+                                   <li><a href="https://youtube.com/channel/UC7Hsd1IVMIgX7cNimZWd5dg"><i class="fa fa-youtube"></i></a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-			<div class="header-bottom  bg-2"  id="sticky-header">
+            <div class="header-middle bg-2">
                 <div class="container">
-    				<div class="row">
-                        <div class="col-md-3 col-sm-8 col-xs-6">
-    						<div class="logo">
-    							<h1><a href="#">SAMITGROUP</a></h1>
-    						</div>
-    					</div>
-    					<div class="col-md-8 hidden-sm hidden-xs">
-    						<div class="mainmenu">
+                    <div class="row">
+                        <div class="col-md-3 hidden-sm hidden-xs">
+                            <div class="logo">
+                                <h1><a href="<?= Yii::$app->homeUrl?>">SAMITGROUP</a></h1>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-xs-12">
+                            <div class="header-middle-right">
+                                  <ul>
+                                    <li>
+                                        <div class="contact-icon">
+                                            <i class="fa fa-clock-o"></i>
+                                        </div>
+                                        <div class="contact-info">
+                                            <p>ПОН - СУБ (9:00 - 20:00)</p>
+                                            <span>Воскресенье</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contact-icon">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                        <div class="contact-info">
+                                            <p>Почта</p>
+                                            <span>samittechnology1@gmail.com</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contact-icon">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <div class="contact-info">
+                                            <p>Телефон</p>
+                                            <span> (+99897) 917-66-53</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom"  id="sticky-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="hidden-md hidden-lg col-sm-8 col-xs-6">
+                            <div class="logo">
+                                <h1><a href="<?= Yii::$app->homeUrl?>">SAMITGROUP</a></h1>
+                            </div>
+                        </div>
+                        <div class="col-md-11 hidden-sm hidden-xs">
+                            <div class="mainmenu" style="margin-left: 368px">
                                 <ul id="navigation">
-    							   								
-                           			</ul>
-    						</div>
-    					</div>
-    					<div class="col-md-1 col-sm-2 col-xs-3">
-    						<div class="search-wrap text-right">
-    							<ul>
-    								<li>
-    									<a href="javascript:void(0);">
-    										<i class="fa fa-search"></i>
-    									</a>
-    								</li>
-    							</ul>
-    						</div>
-    					</div>
-    					<div class="col-sm-2 clear col-xs-3 hidden-md hidden-lg">
-    						<div class="responsive-menu-wrap floatright"></div>
-    					</div>
-    				</div>
-    			</div>
-			</div>
-		</header>
-		<!-- heared area end -->
+                                  <?php $action=Yii::$app->controller->action->id;
+                                  $controller=Yii::$app->controller->id;
+                            ?>
+                                <li class="<?=($controller=='site' and $action=='index')?'active':''?>"><a href="<?= Yii::$app->homeUrl?>">Главная</i></a>
+                                    </li>
+                                    <li class="<?=($action=='about')?'active':''?>"><a href="<?=Url::to(['site/about'])?>">О нас</i></a>
+                                    </li>
+                                    <li class="<?=($action=='service')?'active':''?>"><a href="<?=Url::to(['site/service'])?>">Услуги</i></a>
+                                    </li>
+                                    <li class="<?=($controller=='post')?'active':''?>"><a href="<?=Url::to(['post/index'])?>">Новости</i></a>
+                                    </li>                           
 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-1 col-sm-2 col-xs-3">
+                            <div class="search-wrap text-right">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 clear col-xs-3 hidden-md hidden-lg">
+                            <div class="responsive-menu-wrap floatright"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- heared area end -->
 		<!-- slider area start -->
 		<section class="slider-area">
 			<div class="slider-active3 slider-next-prev-style">
@@ -110,7 +179,7 @@ AppAsset::register($this);
 											<h2>Веб-разработка</h2>
 											<p>Разработка качественных сайтов: визитки, лэндинги, интернет-магазины, каталоги, блоги. Подбор имени сайта, регистрация, размещение на хостинге.</p>
 											<ul>
-												<li><a href="#">Подробно</a></li>
+												<li><a href="<?= Url::to(['service/view', 'id'=>9])?>">Подробно</a></li>
 												
 											</ul>
 										</div>
@@ -132,7 +201,7 @@ AppAsset::register($this);
 											<p>Наши специалисты осуществляют монтаж любой сложности и структуры. От компьютерной сети небольшого офиса до кабельных сетей комплекса офисных зданий.</p>
 											<ul>
                                             <ul>
-												<li><a href="#">Подробно</a></li>
+												<li><a href="<?= Url::to(['service/view', 'id'=>11])?>">Подробно</a></li>
 												
 											</ul>
 											</ul>
@@ -154,7 +223,7 @@ AppAsset::register($this);
 											<h2>Обслуживание видеонаблюдения</h2>
 											<p>Мы готовы, вам предложить низкие цены на оборудования по видеонаблюдения и рассчитать монтаж видеонаблюдения на вашем объекте.</p>
 											<ul>
-												<li><a href="#">Подробно</a></li>
+												<li><a href="<?= Url::to(['service/view', 'id'=>10])?>">Подробно</a></li>
 												
 											</ul>
 										</div>
@@ -175,29 +244,33 @@ AppAsset::register($this);
 			<div class="footer-top">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-6 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".1s">
+                        <div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".2s">
+                            <div class="footer-widget footer-menu">
+                               <a href="<?= Yii::$app->homeUrl?>"><img src="/images/SamITTechnology.png"></a>
+                            </div>
+                        </div>
+						<div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".1s">
 							<div class="footer-widget footer-logo">
                                 <h1>SAMITGROUP</h1>
                                 <p>Мы ИТ-компания, предлагаем различные ИТ-услуги</p>
                                 <ul>
                                     <li><i class="fa fa-phone"></i> +99897 9176653</li>
-                                    <li><i class="fa fa-envelope"></i> samitgroup@gmail.com</li>
+                                    <li><i class="fa fa-envelope"></i> samittechnology1@gmail.com</li>
                                 </ul>
 							</div>
 						</div>
-                        <div class="col-md-6 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".2s">
+                        <div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".2s">
                             <div class="footer-widget footer-menu">
                                 <h2>Меню</h2>
                                 <ul>
-                                    <li><a href="#about">О нас</a></li>
-                                    <li><a href="#xizmatlar">Наши услуги</a></li>
-                                    <li><a href="#portfolio">Наши работы</a></li>
+                                    <li><a href="<?=Url::to(['site/about'])?>">О нас</a></li>
+                                    <li><a href="<?=Url::to(['site/service'])?>">Наши услуги</a></li>
                                     <li><a href="#team">Наша команда</a></li>
-                                    <li><a href="#blog">Последние новости</a></li>
+                                    <li><a href="<?=Url::to(['post/index'])?>">Последние новости</a></li>
                                 </ul>
                             </div>
                         </div>
-                	</div>
+                      </div>
 				</div>
 			</div>
             <div class="footer-bottom text-center">

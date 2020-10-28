@@ -15,22 +15,21 @@ class SiteController extends Controller
     /**
      * {@inheritdoc}
      */
-
-     public function behaviors()
+public function behaviors()
     {
         return [
             'access' => [
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['login', 'error'],
                         'allow' => true,
-                        'roles' => ['?'],        
+                        'actions' => ['login', 'signup'],
+                        'roles'=>['?']
                     ],
                     [
-                        'actions' => ['logout', 'index'],
                         'allow' => true,
-                        'roles' => ['?'],
+                        'actions' => ['logout', 'index', 'error', 'login'],
+                        'roles' => ['@'],
                     ],
                 ],
             ],
@@ -41,8 +40,16 @@ class SiteController extends Controller
                 ],
             ],
         ];
-    } 
-
+    }
+  
+    public function actions()
+    {
+        return [
+            'error' => [
+                'class' => 'yii\web\ErrorAction',
+            ],
+        ];
+    }
     public function actionIndex()
     {
         return $this->render('index');

@@ -3,6 +3,7 @@
 /* @var $this yii\web\View */
 
 use yii\helpers\Url;
+use yii\imagine\Image;
 
 $this->title = 'SAM-IT-TECHNOLOGY';
 ?>
@@ -22,7 +23,7 @@ $this->title = 'SAM-IT-TECHNOLOGY';
                             <div class="service-content">
                                 <h3>Веб-разработка</h3>
                                 <p>Разработка качественных сайтов: визитки, лэндинги, интернет-магазины, каталоги, блоги. Подбор имени сайта, регистрация, размещение на хостинге.</p>
-                                <a href="single-service.html">Подробнее</a>
+                                <a href="<?=Url::to(['service/view', 'id'=>9])?>">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -31,7 +32,7 @@ $this->title = 'SAM-IT-TECHNOLOGY';
                             <div class="service-content">
                                 <h3>Сеть и сетевое оборудование</h3>
                                 <p>Наши специалисты осуществляют монтаж любой сложности и структуры. От компьютерной сети небольшого офиса до кабельных сетей комплекса офисных зданий.</p>
-                                <a href="single-service.html">Подробнее</a>
+                                <a href="<?=Url::to(['service/view', 'id'=>11])?>">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -40,7 +41,7 @@ $this->title = 'SAM-IT-TECHNOLOGY';
                             <div class="service-content">
                                 <h3>Обслуживание видеонаблюдения</h3>
                                 <p>Мы готовы, вам предложить низкие цены на оборудования по видеонаблюдения и рассчитать монтаж видеонаблюдения на вашем объекте.</p>
-                                <a href="single-service.html">Подробнее</a>
+                                <a href="<?=Url::to(['service/view', 'id'=>10])?>">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -152,7 +153,7 @@ $this->title = 'SAM-IT-TECHNOLOGY';
                          <div class="portfolio website col">
                             <div class="portfolio-wrap">
                                 <div class="overlay">
-                                    <a class="popup" href="/images/portfolio/2.jpg">
+                                    <a class="popup" href="/images/portfolio/stem.samdchti.uz.gif">
                                         <i class="fa fa-link"></i>
                                     </a>
                                     <h3>Веб сайт</h3>
@@ -166,7 +167,21 @@ $this->title = 'SAM-IT-TECHNOLOGY';
                        <div class="portfolio website col">
                             <div class="portfolio-wrap">
                                 <div class="overlay">
-                                    <a class="popup" href="/images/portfolio/2.jpg">
+                                    <a class="popup" href="/images/portfolio/english.jpg">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                    <h3>Веб сайт</h3>
+                                    <p>Качественный сайт, который мы для вас разработаем.</p>
+                                </div>
+                                <div class="portfolio-img">
+                                    <img src="/images/portfolio/2.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio website col">
+                            <div class="portfolio-wrap">
+                                <div class="overlay">
+                                    <a class="popup" href="/images/portfolio/anatoliy.jpg">
                                         <i class="fa fa-link"></i>
                                     </a>
                                     <h3>Веб сайт</h3>
@@ -323,7 +338,7 @@ $this->title = 'SAM-IT-TECHNOLOGY';
                                 <img src="/images/team/team2/4.jpg" alt="" />
                             </div>
                             <div class="team-content">
-                                <h3>Рузимурод</h3>
+                                <h3>Янгибоев Рузимурод</h3>
                                 <p>Системный администратор</p>
                             </div>
                         </div>
@@ -349,7 +364,11 @@ $this->title = 'SAM-IT-TECHNOLOGY';
 					<div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".1s">
 						<div class="blog-wrap">
 							<div class="blog-img">
-								<img src="/uploads/<?=$post->img?>" alt="" />
+                                <?php //$image = Yii::getAlias("@frontend/web/uploads/".$post->img);
+                                //$image2 = Image::thumbnail($image, 400, 220)
+                               // ->save(Yii::getAlias("@frontend/web/images/post/".$post->img), ['quality' => 70]);
+                                 //$img = Image::getImagine()->open($image2); ?>
+								<img src="/images/post/<?=$post->img?>" alt="" />
 							</div>
 							<div class="blog-content">
 								<div class="blog-meta">

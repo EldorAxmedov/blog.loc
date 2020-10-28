@@ -18,20 +18,21 @@ class CategoryController extends Controller
     /**
      * {@inheritdoc}
      */
-    public function behaviors()
+   public function behaviors()
     {
         return [
             'access' => [
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['login', 'error'],
                         'allow' => true,
+                        'actions' => ['login', 'signup'],
+                        'roles'=>['?']
                     ],
                     [
-                        'actions' => ['logout', 'index','login', 'create', 'update'],
                         'allow' => true,
-                        'roles' => ['?'],
+                        'actions' => ['logout', 'index', 'create', 'update', 'delete', 'error'],
+                        'roles' => ['@'],
                     ],
                 ],
             ],
@@ -125,7 +126,7 @@ class CategoryController extends Controller
     }
 
     /**
-     * Finds the Category model based on its primary key value.
+     * Finds the CAtegory model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
      * @return Category the loaded model

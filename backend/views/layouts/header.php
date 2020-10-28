@@ -22,8 +22,8 @@ use yii\helpers\Html;
                 <!-- Messages: style can be found in dropdown.less-->
 
                 <li><?= Html::a(
-                        'Sign out',
-                        ['/site/logout'],
+                        'Chiqish',
+                        ['site/logout'],
                         ['data-method' => 'post', 'class' => 'btn btn-flat']
                     ) ?></li>
                 <!-- Tasks: style can be found in dropdown.less -->

@@ -16,23 +16,23 @@ use yii\filters\AccessControl;
  */
 class PostController extends Controller
 {
-    /**
-     * {@inheritdoc}
-     */
-     public function behaviors()
+   
+
+public function behaviors()
     {
         return [
             'access' => [
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['login', 'error'],
                         'allow' => true,
+                        'actions' => ['login', 'signup'],
+                        'roles'=>['?']
                     ],
                     [
-                        'actions' => ['logout', 'index'],
                         'allow' => true,
-                        'roles' => ['?'],
+                        'actions' => ['logout', 'index', 'create', 'update', 'delete', 'error'],
+                        'roles' => ['@'],
                     ],
                 ],
             ],
@@ -41,6 +41,16 @@ class PostController extends Controller
                 'actions' => [
                     'logout' => ['post'],
                 ],
+            ],
+        ];
+    }
+
+
+public function actions()
+    {
+        return [
+            'error' => [
+                'class' => 'yii\web\ErrorAction',
             ],
         ];
     }

@@ -29,7 +29,7 @@ class PostController extends Controller
     {
         $alls=Post::find()->orderBy(['id'=>SORT_DESC]);
         $pagination = new Pagination([
-            'defaultPageSize'=>5,
+            'defaultPageSize'=>4,
             'totalCount'=>$alls->count(),
         ]);
          $alls = $alls->offset($pagination->offset)
@@ -52,11 +52,11 @@ class PostController extends Controller
      */
     public function actionView($id)
     {
-
+        $posts=Post::find()->orderBy(['id'=>SORT_DESC])->limit(3)->all();
         return $this->render('view', [
 
             'model' => $this->findModel($id),
-
+            'posts'=>$posts,
         ]);
     }
 
