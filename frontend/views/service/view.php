@@ -8,7 +8,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model common\models\Service */
 
-$this->title = $model->title;
+$this->title = $model->getTitle();
 $this->params['breadcrumbs'][] = ['label' => 'Services', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
@@ -19,11 +19,13 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="col-md-8 col-xs-12">
                         <div class="blog-details-wrap">
                             <div class="blog-details-img">
-                                <img src="/uploads/<?=$model->img?>" alt="">
+                                <img src="/uploads/<?=$model->img?>" alt="" width="800" height="220">
                             </div>
                             <div class="blog-details-content">
-                                <h3><?=$model->title?></h3>
-                                <p><?=$model->content?></p>
+                                <h3><?=$model->getTitle()?></h3>
+                                <p><?=$model->getContent()?></p>
+                                <p><i class="fa fa-calendar" style="color:#296DC1"></i> <?=$model->created_at?>
+                                    <i class="fa fa-eye" style="color:#296DC1"></i><?=$model->count_view?></p>
                             </div>
                         </div>
                     </div>

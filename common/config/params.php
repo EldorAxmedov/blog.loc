@@ -5,4 +5,12 @@ return [
     'senderEmail' => 'noreply@example.com',
     'senderName' => 'Example.com mailer',
     'user.passwordResetTokenExpire' => 3600,
+    'languages'=>[
+        'uz'=>'O\'zbekcha',
+        'ru'=>'Русскый'
+    ],
+    'language'=>[
+        'uz'=>'O\'z',
+        'ru'=>'Ру',
+    ]
 ];

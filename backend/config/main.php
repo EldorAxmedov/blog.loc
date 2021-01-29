@@ -17,6 +17,14 @@ return [
          'baseUrl'=>'/backend',
          'csrfParam' => '_csrf-backend',
         ],
+        'i18n' => [
+            'translations' => [
+                'yii' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'sourceLanguage' => 'en',
+                ],
+            ],
+        ],
         'view' => [
             'theme' => [
                 'pathMap' => [

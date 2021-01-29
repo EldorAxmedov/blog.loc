@@ -22,7 +22,8 @@
         "mihaildev/yii2-elfinder": "*",
         "mihaildev/yii2-ckeditor": "*",
         "yiisoft/yii2-imagine": "^2.2",
-        "aki/yii2-bot-telegram": "*"
+        "aki/yii2-bot-telegram": "*",
+        "codemix/yii2-localeurls": "^1.7"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",

@@ -30,6 +30,9 @@ class Post extends \yii\db\ActiveRecord
     {
         return 'post';
     }
+    public $translate_title;
+    public $translate_description;
+    public $translate_content;
 
     /**
      * {@inheritdoc}
@@ -43,6 +46,7 @@ class Post extends \yii\db\ActiveRecord
             [['video', 'slug'], 'string', 'max' => 255],
             [['category_id'], 'exist', 'skipOnError' => true, 'targetClass' => Category::className(), 'targetAttribute' => ['category_id' => 'id']],
             [['img'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg, jpeg'],
+            [['translate_title','translate_description','translate_content'], 'safe']
         ];
     }
 
@@ -55,8 +59,11 @@ class Post extends \yii\db\ActiveRecord
             'id' => 'ID',
             'category_id' => 'Kategoriya',
             'title' => 'Sarlavha',
-            'description' => 'Qisqacha',
+            'translate_title' => Yii::t('yii','Title'),
+            'description' => Yii::t('yii','Description'),
+            'translate_description' => Yii::t('yii','Description'),
             'content' => 'To\'liq',
+            'translate_content' => Yii::t('yii','Content'),
             'img' => 'Rasm',
             'video' => 'Video',
             'created_at' => 'Vaqti',
@@ -81,5 +88,86 @@ class Post extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Category::className(), ['id' => 'category_id']);
     }
+    public function getTitle($language=null)
+    {
+        $title = json_decode($this->title,true);
+        if ($language) {
+            if (isset($title[$language])) {
+                return $title[$language];
+            } else {
+                return null;
+            }
+        }
+          if (isset($title[Yii::$app->language])) {
+              if ($title[Yii::$app->language]!=''){
+                  return $title[Yii::$app->language];
+              }
 
+
+        }else{
+            $a = null;
+            foreach ($title as $value) {
+                if ($value!='') {
+                    $a = $value;
+                    break;
+                }
+            }
+            return $a;
+        }
+    }
+    public function getDescription($language=null)
+    {
+        $title = json_decode($this->description,true);
+         if ($language) {
+             if (isset($title[$language])) {
+                 return $title[$language];
+             } else {
+                 return null;
+             }
+         }
+
+        if (isset($title[Yii::$app->language])) {
+            if ($title[Yii::$app->language]!=''){
+                return $title[Yii::$app->language];
+            }
+
+
+        }else{
+            $a = null;
+            foreach ($title as $value) {
+                if ($value!='') {
+                    $a = $value;
+                    break;
+                }
+            }
+            return $a;
+        }
+    }
+    public function getContent($language=null)
+    {
+        $title = json_decode($this->content,true);
+        if ($language) {
+            if (isset($title[$language])) {
+                return $title[$language];
+            } else {
+                return null;
+            }
+        }
+        if (isset($title[Yii::$app->language])) {
+            if ($title[Yii::$app->language]!=''){
+                return $title[Yii::$app->language];
+            }
+
+
+        }else{
+            $a = null;
+            foreach ($title as $value) {
+                if ($value!='') {
+                    $a = $value;
+                    break;
+                }
+            }
+            return $a;
+        }
+    }
 }

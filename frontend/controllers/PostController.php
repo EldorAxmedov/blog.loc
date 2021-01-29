@@ -53,7 +53,7 @@ class PostController extends Controller
     public function actionView($id)
     {
         $posts=Post::find()->orderBy(['id'=>SORT_DESC])->limit(3)->all();
-        return $this->render('view', [
+            return $this->render('view', [
 
             'model' => $this->findModel($id),
             'posts'=>$posts,
@@ -74,7 +74,7 @@ class PostController extends Controller
         if (($model = Post::findOne($id)) !== null) {
          $model->count_view+=1;
          $model->save();
-                     return $model;
+         return $model;
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');

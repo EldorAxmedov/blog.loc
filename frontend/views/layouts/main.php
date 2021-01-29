@@ -20,6 +20,7 @@ AppAsset::register($this);
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php $this->registerMetaTag(['name'=>'создание сайтов в самарканде, компьютерные сети в самарканде, видеонаблюдение в самарканде', 'content'=>'Все IT услуги в Самарканде'])?>
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
@@ -62,15 +63,16 @@ AppAsset::register($this);
                     <div class="row">
                         <div class="col-md-6 col-sm-8 col-xs-12">
                             <div class="header-top-left">
-                                <p>Мы ИТ-компания, предлагаем различные ИТ-услуги</p>
+                                <p><?=Yii::t('yii', 'We are an IT company offering various IT services')?></p>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-4 col-xs-12">
                             <div class="header-top-right text-right">
                                 <ul>
-                                    <li><a href="https://www.facebook.com/samittechnology"><i class="fa fa-facebook"></i></a></li>
+                                   <li><a href="https://t.me/samittechnology"><i class='fa fa-telegram'></i></a></li>
+                                   <li><a href="https://www.facebook.com/samittechnology"><i class="fa fa-facebook"></i></a></li>
                                    <li><a href="https://youtube.com/channel/UC7Hsd1IVMIgX7cNimZWd5dg"><i class="fa fa-youtube"></i></a></li>
-                                </ul>
+                                 </ul>
                             </div>
                         </div>
                     </div>
@@ -88,24 +90,15 @@ AppAsset::register($this);
                             <div class="header-middle-right">
                                   <ul>
                                     <li>
-                                        <div class="contact-icon">
-                                            <i class="fa fa-clock-o"></i>
-                                        </div>
-                                        <div class="contact-info">
-                                            <p>ПОН - СУБ (9:00 - 20:00)</p>
-                                            <span>Воскресенье</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="contact-icon">
-                                            <i class="fa fa-envelope"></i>
-                                        </div>
-                                        <div class="contact-info">
-                                            <p>Почта</p>
-                                            <span>samittechnology1@gmail.com</span>
-                                        </div>
-                                    </li>
-                                    <li>
+                                          <div class="contact-icon">
+                                              <i class="fa fa-telegram"> </i>
+                                          </div>
+                                          <div class="contact-info">
+                                              <p>Телеграм</p>
+                                              <span> (+99897) 917-66-53</span>
+                                          </div>
+                                      </li>
+                                      <li>
                                         <div class="contact-icon">
                                             <i class="fa fa-phone"></i>
                                         </div>
@@ -114,7 +107,16 @@ AppAsset::register($this);
                                             <span> (+99897) 917-66-53</span>
                                         </div>
                                     </li>
-                                </ul>
+
+                                      <li>
+                                      <div class="contact-icon">
+                                          <i class="fa fa-language"> </i>
+                                      </div>
+                                      <div class="contact-info language">
+                                       <?=frontend\widgets\LanguageWidget::widget();?>
+                                      </div>
+                                      </li>
+                                       </ul>
                             </div>
                         </div>
                     </div>
@@ -134,19 +136,21 @@ AppAsset::register($this);
                                   <?php $action=Yii::$app->controller->action->id;
                                   $controller=Yii::$app->controller->id;
                             ?>
-                                <li class="<?=($controller=='site' and $action=='index')?'active':''?>"><a href="<?= Yii::$app->homeUrl?>">Главная</i></a>
+                                <li class="<?=($controller=='site' and $action=='index')?'active':''?>"><a href="<?=Url::to(['site/index'])?><?= Yii::$app->homeUrl?>"><?=Yii::t('yii', 'Home')?></i></a>
                                     </li>
-                                    <li class="<?=($action=='about')?'active':''?>"><a href="<?=Url::to(['site/about'])?>">О нас</i></a>
+                                    <li class="<?=($action=='about')?'active':''?>"><a href="<?=Url::to(['site/about'])?>"><?=Yii::t('yii', 'About')?></i></a>
                                     </li>
-                                    <li class="<?=($action=='service')?'active':''?>"><a href="<?=Url::to(['site/service'])?>">Услуги</i></a>
+                                    <li class="<?=($action=='service')?'active':''?>"><a href="<?=Url::to(['site/service'])?>"><?=Yii::t('yii', 'Services')?></i></a>
                                     </li>
-                                    <li class="<?=($controller=='post')?'active':''?>"><a href="<?=Url::to(['post/index'])?>">Новости</i></a>
-                                    </li>                           
+                                    <li class="<?=($controller=='post')?'active':''?>"><a href="<?=Url::to(['post/index'])?>"><?=Yii::t('yii', 'News')?></i></a>
+                                    </li>
 
                                 </ul>
                             </div>
                         </div>
+
                         <div class="col-md-1 col-sm-2 col-xs-3">
+
                             <div class="search-wrap text-right">
                                 <ul>
                                     <li>
@@ -157,7 +161,7 @@ AppAsset::register($this);
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-sm-2 clear col-xs-3 hidden-md hidden-lg">
+                         <div class="col-sm-2 clear col-xs-3 hidden-md hidden-lg">
                             <div class="responsive-menu-wrap floatright"></div>
                         </div>
                     </div>
@@ -176,10 +180,10 @@ AppAsset::register($this);
 								<div class="container">
 									<div class="row">
 										<div class="col-xs-12 col-md-8 col-md-offset-2">
-											<h2>Веб-разработка</h2>
-											<p>Разработка качественных сайтов: визитки, лэндинги, интернет-магазины, каталоги, блоги. Подбор имени сайта, регистрация, размещение на хостинге.</p>
+											<h2><?=Yii::t('yii', 'Web programming')?></h2>
+											<p><?=Yii::t('yii', 'Development of high-quality sites: business cards, landing pages, online stores, catalogs, blogs. Site name selection, registration, hosting.')?></p>
 											<ul>
-												<li><a href="<?= Url::to(['service/view', 'id'=>9])?>">Подробно</a></li>
+												<li><a href="<?= Url::to(['service/view', 'id'=>9])?>"><?=Yii::t('yii', 'More details')?></a></li>
 												
 											</ul>
 										</div>
@@ -197,11 +201,11 @@ AppAsset::register($this);
 								<div class="container">
 									<div class="row">
 										<div class="col-xs-12 col-md-8 col-md-offset-2">
-											<h2>Сеть и сетевое оборудование</h2>
-											<p>Наши специалисты осуществляют монтаж любой сложности и структуры. От компьютерной сети небольшого офиса до кабельных сетей комплекса офисных зданий.</p>
+											<h2><?=Yii::t('yii', 'Network and networking equipment')?></h2>
+											<p><?=Yii::t('yii', 'Our specialists carry out installation of any complexity and structure. From the computer network of a small office to the cable networks of an office complex.')?></p>
 											<ul>
                                             <ul>
-												<li><a href="<?= Url::to(['service/view', 'id'=>11])?>">Подробно</a></li>
+												<li><a href="<?= Url::to(['service/view', 'id'=>11])?>"><?=Yii::t('yii', 'More details')?></a></li>
 												
 											</ul>
 											</ul>
@@ -220,10 +224,10 @@ AppAsset::register($this);
 								<div class="container">
 									<div class="row">
 										<div class="col-xs-12 col-md-8 col-md-offset-2">
-											<h2>Обслуживание видеонаблюдения</h2>
-											<p>Мы готовы, вам предложить низкие цены на оборудования по видеонаблюдения и рассчитать монтаж видеонаблюдения на вашем объекте.</p>
+											<h2><?=Yii::t('yii', 'Video surveillance service')?></h2>
+											<p><?=Yii::t('yii', 'We are ready to offer you low prices for video surveillance equipment and calculate the installation of video surveillance at your facility.')?></p>
 											<ul>
-												<li><a href="<?= Url::to(['service/view', 'id'=>10])?>">Подробно</a></li>
+												<li><a href="<?= Url::to(['service/view', 'id'=>10])?>"><?=Yii::t('yii', 'More details')?></a></li>
 												
 											</ul>
 										</div>
@@ -252,7 +256,7 @@ AppAsset::register($this);
 						<div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".1s">
 							<div class="footer-widget footer-logo">
                                 <h1>SAMITGROUP</h1>
-                                <p>Мы ИТ-компания, предлагаем различные ИТ-услуги</p>
+                                <p><?=Yii::t('yii', 'We are an IT company offering various IT services')?></p>
                                 <ul>
                                     <li><i class="fa fa-phone"></i> +99897 9176653</li>
                                     <li><i class="fa fa-envelope"></i> samittechnology1@gmail.com</li>
@@ -263,10 +267,10 @@ AppAsset::register($this);
                             <div class="footer-widget footer-menu">
                                 <h2>Меню</h2>
                                 <ul>
-                                    <li><a href="<?=Url::to(['site/about'])?>">О нас</a></li>
-                                    <li><a href="<?=Url::to(['site/service'])?>">Наши услуги</a></li>
-                                    <li><a href="#team">Наша команда</a></li>
-                                    <li><a href="<?=Url::to(['post/index'])?>">Последние новости</a></li>
+                                    <li><a href="<?=Url::to(['site/about'])?>"><?=Yii::t('yii', 'About')?></a></li>
+                                    <li><a href="<?=Url::to(['site/service'])?>"><?=Yii::t('yii', 'Services')?></a></li>
+                                    <li><a href="#team"><?=Yii::t('yii', 'Our team')?></a></li>
+                                    <li><a href="<?=Url::to(['post/index'])?>"><?=Yii::t('yii', 'Last news')?></a></li>
                                 </ul>
                             </div>
                         </div>

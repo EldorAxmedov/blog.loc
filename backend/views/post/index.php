@@ -9,10 +9,8 @@ use yii\grid\GridView;
 
 
 $this->title = 'Посты';
-$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="post-index">
-
 
 
     <p>
@@ -20,8 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
-    <?= GridView::widget([
+     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
@@ -29,8 +26,18 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id',
             'category_id',
-            'title:ntext',
-            'description:ntext',
+            [
+            'attribute'=>'title',
+            'value'=>function($model){
+             return $model->getTitle();
+            }
+                    ],
+            [
+                'attribute'=>'description',
+                'value'=>function($model){
+                    return $model->getDescription();
+                    }
+                ],
             //'content:ntext',
             //'img',
             //'video',

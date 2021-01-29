@@ -7,7 +7,7 @@ $params = array_merge(
 );
 
 return [
-    'language'=>'ru',
+    'language'=>'uz',
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
@@ -16,6 +16,14 @@ return [
         'request' => [
             'baseUrl'=>'',
             'csrfParam' => '_csrf-frontend',
+        ],
+        'i18n' => [
+        'translations' => [
+               'yii' => [
+                   'class' => 'yii\i18n\PhpMessageSource',
+                   'sourceLanguage' => 'en',
+               ],
+            ],
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -40,13 +48,22 @@ return [
         ],
         
         'urlManager' => [
+            'class' => 'codemix\localeurls\UrlManager',
+            'languages' => ['uz', 'ru'],
+            'enableDefaultLanguageUrlCode'=>true,
             'scriptUrl'=>'/index.php',
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                '' => 'site/index',
+                'about'=>'site/about',
+                'service'=>'site/service',
+                'news'=>'post/index',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
-                '<controller:\w+>/<action:\w+>' => '<controller>/<action>'
+                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+
             ],
+
         ],
        
     ],

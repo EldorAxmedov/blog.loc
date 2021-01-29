@@ -18,15 +18,15 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="about-wrap">
-                            <h3>О нас</h3>
-                            <p>Любые компании, предприятия и организации осуществляют свою деятельность при помощи информации. Это самый востребованный продукт в наше время, который помогает стремительно развивать бизнес в самых различных отраслях.</p>
-							<p>Для оперирования данными, их получения, обработки и передачи необходим ряд оборудования, программного обеспечения и услуг, которые предоставляют IT компании.</p>
-							<p>Мы специализируемся на разработке и внедрении системных решений в области современных информационных технологий. Основная наша задача – найти оптимальные формы взаимовыгодной работы с клиентом. Для этого мы прилагаем все усилия, направленные на развитие и совершенствование предоставляемых нами услуг и технологий.</p>
-							<p>Наши преимущества</p>
+                            <h3><?=Yii::t('yii', 'About')?></h3>
+                            <p><?=Yii::t('yii', 'Any companies, enterprises and organizations carry out their activities using information. This is the most demanded product in our time, which helps to rapidly develop business in a wide variety of industries.')?></p>
+                            <p><?=Yii::t('yii', 'To operate with data, receive it, process and transfer it, a number of equipment, software and services are required that are provided by IT companies.')?>></p>
+                            <p><?=Yii::t('yii', 'We specialize in the development and implementation of system solutions in the field of modern information technology. Our main task is to find the optimal forms of mutually beneficial work with the client. To do this, we make every effort to develop and improve the services and technologies we provide.')?>></p>
+                            <p><?=Yii::t('yii', 'Our advantages')?></p>
 							<ul>
-								<li>Простота и открытость коммуникаций.</li>
-								<li>Формирование эффективных комманд.</li>
-								<li>Адаптивност к процессам заказчика</li>
+                                <li><?=Yii::t('yii', 'Simplicity and openness of communication')?></li>
+                                <li><?=Yii::t('yii', 'Formation of effective teams')?></li>
+                                <li><?=Yii::t('yii', 'Adaptability to customer processes')?></li>
 								</ul>
                             </ul>
                         </div>
@@ -39,8 +39,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
                         <div class="section-title text-center">
-                            <h2>Наши услуги</h2>
-                            <p>ИТ-услуги — это перечень готовых способов и решений квалифицированной поддержки в области информационных технологий, если говорить простыми словами.</p>
+                            <h2><?=Yii::t('yii', 'Services')?></h2>
+                            <p><?=Yii::t('yii', 'IT services is a list of ready-made methods and solutions for qualified support in the field of information technology, in simple terms.')?></p>
                         </div>
                     </div>
                 </div>
@@ -52,9 +52,9 @@ $this->params['breadcrumbs'][] = $this->title;
                                 <img src="/images/service/<?=$service->img?>" alt="">
                             </div>
                             <div class="service-content">
-                                <h3><?=$service->title?></h3>
-                                <p><?=$service->description?></p>
-                                <a href="<?=Url::to(['service/view', 'id'=>$service->id])?>">Подробнее</a>
+                                <h3><?=$service->getTitle()?></h3>
+                                <p><?=$service->getDescription()?></p>
+                                <a href="<?=Url::to(['service/view', 'id'=>$service->id])?>"><?=Yii::t('yii', 'More details')?></a>
                             </div>
                         </div>
                     </div>

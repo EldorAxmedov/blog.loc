@@ -32,7 +32,7 @@ class ServiceController extends Controller
                     ],
                     [
                         'allow' => true,
-                        'actions' => ['logout', 'index', 'create', 'update', 'delete', 'error'],
+                        'actions' => ['logout', 'index', 'create', 'update', 'delete', 'view', 'error'],
                         'roles' => ['@'],
                     ],
                 ],
@@ -84,20 +84,31 @@ class ServiceController extends Controller
     {
         $model = new Service();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $model->img=UploadedFile::getInstance($model, 'img');
-            if ($model->img and $model->upload()) {
+        if ($model->load(Yii::$app->request->post())) {
+            $model->title = json_encode($model->translate_title,JSON_UNESCAPED_UNICODE);
+            $model->description = json_encode($model->translate_description,JSON_UNESCAPED_UNICODE);
+            $model->content = json_encode($model->translate_content,JSON_UNESCAPED_UNICODE);
+
+           if ($model->save()){
+               $model->img=UploadedFile::getInstance($model, 'img');
+           if ($model->img and $model->upload()) {
                $model->img=$model->img->baseName.'.'.$model->img->extension;
                 $model->save();
             }
 
             return $this->redirect(['view', 'id' => $model->id]);
-        }
+        }else {
+               return $this->render('create', [
+                   'model' => $model,
+               ]);
+           }
+    }else{
+                return $this->render('create', [
+                    'model' => $model,
+                ]);
+            }
 
-        return $this->render('create', [
-            'model' => $model,
-        ]);
-    }
+        }
 
     /**
      * Updates an existing Service model.
@@ -106,28 +117,46 @@ class ServiceController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionUpdate($id)
-    {
-        $model = $this->findModel($id);
-        $img=$model->img;
+public function actionUpdate($id)
+{
+    $model = $this->findModel($id);
+    $img = $model->img;
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-             $model->img = UploadedFile::getInstance($model, 'img');
+    if ($model->load(Yii::$app->request->post())) {
+
+        $model->title = json_encode($model->translate_title,JSON_UNESCAPED_UNICODE);
+        $model->description = json_encode($model->translate_description,JSON_UNESCAPED_UNICODE);
+        $model->content = json_encode($model->translate_content,JSON_UNESCAPED_UNICODE);
+
+        if ($model->save()) {
+            $model->img = UploadedFile::getInstance($model, 'img');
             if ($model->img and $model->upload()) {
-                $model->img=$model->img->baseName.'.'.$model->img->extension;
+                $model->img = $model->img->baseName.'.'.$model->img->extension;
+                $model->save();
+            }else{
+                $model->img = $img;
                 $model->save();
             }
-             else{
-              $model->img = $img;
-              $model->save();
-            }
             return $this->redirect(['view', 'id' => $model->id]);
+        } else {
+            $model->translate_title = json_decode($model->title,true);
+            $model->translate_description = json_decode($model->description,true);
+            $model->translate_content = json_decode($model->content,true);
+            return $this->render('update', [
+                'model' => $model,
+            ]);
         }
 
+    } else {
+
+        $model->translate_title = json_decode($model->title,true);
+        $model->translate_description = json_decode($model->description,true);
+        $model->translate_content = json_decode($model->content,true);
         return $this->render('update', [
             'model' => $model,
         ]);
     }
+}
 
     /**
      * Deletes an existing Service model.

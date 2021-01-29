@@ -17,16 +17,16 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div class="col-md-4 col-sm-6 col-xs-12 col">
                         <div class="service-wrap mb-30">
                             <div class="service-img">
-                            	 <?php $image = Yii::getAlias("@frontend/web/uploads/".$service->img);
-                                $image2 = Image::thumbnail($image, 400, 220)
-                                ->save(Yii::getAlias("@frontend/web/images/service/".$service->img), ['quality' => 70]);
+                            	 <?php //$image = Yii::getAlias("@frontend/web/uploads/".$service->img);
+                                //$image2 = Image::thumbnail($image, 400, 220)
+                               // ->save(Yii::getAlias("@frontend/web/images/service/".$service->img), ['quality' => 70]);
                                  //$img = Image::getImagine()->open($image2); ?>
-                                <img src="/images/service/<?=$service->img?>" alt="">
+                                <img src="/images/service/<?=$service->img?>" alt="" width="400" height="220">
                             </div>
                             <div class="service-content">
-                                <h3><?=$service->title?></h3>
-                                <p><?=$service->description?></p>
-                                <a href="<?=Url::to(['service/view', 'id'=>$service->id])?>">Подробнее</a>
+                                <h3><?=$service->getTitle()?></h3>
+                                <p><?=$service->getDescription()?></p>
+                                <a href="<?=Url::to(['service/view', 'id'=>$service->id])?>"><?=Yii::t('yii', 'More details')?></a>
                             </div>
                         </div>
                     </div>

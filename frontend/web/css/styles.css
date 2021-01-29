@@ -671,7 +671,6 @@ ul{
 }
 .slider-content p{
 	color:#fff;
-	text-transform:capitalize;
 	margin-bottom:25px;
 }
 .slider-content ul li{
@@ -820,7 +819,6 @@ ul{
 }
 .about-wrap h2{
 	margin-bottom:20px;
-    text-transform: capitalize;
     position: relative;
     padding-bottom: 10px;
 	line-height:30px;
@@ -1660,7 +1658,6 @@ ul{
 }
 .blog-content h3 a{
 	font-size:20px;
-	text-transform:capitalize;
 }
 .blog-content p{
 	margin-bottom:20px;
@@ -1902,6 +1899,15 @@ ul{
 .header-middle-right ul li .contact-info p{
     color: #fff;
     line-height: 20px;
+}
+.header-middle-right ul li .contact-info a{
+    color: #fff;
+    line-height: 18px;
+    font-size: 16px;
+    }
+.language{
+    padding: 9px;
+    color: white;
 }
 .header-middle-right ul li .contact-info span{
     font-size: 12px;
@@ -2769,7 +2775,6 @@ ul{
 .sidebar-title{
     position: relative;
     font-size: 22px;
-    text-transform: capitalize;
     padding-bottom: 5px;
     margin-bottom: 20px;
 }

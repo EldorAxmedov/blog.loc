@@ -47,6 +47,8 @@ class ServiceController extends Controller
     protected function findModel($id)
     {
         if (($model = Service::findOne($id)) !== null) {
+            $model->count_view+=1;
+            $model->save();
             return $model;
         }
 
