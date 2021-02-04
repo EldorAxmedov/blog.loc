@@ -3,6 +3,9 @@
 /* @var $this yii\web\View */
 
 use yii\helpers\Url;
+use Imagine\Gd;
+use Imagine\Image\Box;
+use Imagine\Image\BoxInterface;
 use yii\imagine\Image;
 
 $this->title = 'SAM-IT-TECHNOLOGY';
@@ -365,12 +368,14 @@ $this->title = 'SAM-IT-TECHNOLOGY';
 					<div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".1s">
 						<div class="blog-wrap">
 							<div class="blog-img">
-                                <?php $image = Yii::getAlias("@frontend/web/uploads/".$post->img);
-                                $image2 = Image::thumbnail($image, 400, 220)
-                               ->save(Yii::getAlias("@frontend/web/images/post/".$post->img), ['quality' => 70]);
-                                 $img = Image::getImagine()->open($image2); ?>
-                                <?php if($post->img){?>
-                                    <img src="/web/images/post/<?=$img?>">
+                                <?php $image = Yii::getAlias('@frontend/web/uploads/');
+                                $imagepost=Yii::getAlias('@frontend/web/images/post/index/');
+                                $imagine=Image::thumbnail(($image . $post->img), 300, 150)
+                                    ->save(($imagepost . $post->img), ['quality' => 70]);
+                                ?>
+                                <?php
+                                if($post->img){?>
+                                    <img src="/images/post/index/<?=$post->img?>">
                                 <?php }else{?>
                                     <img src="/images/about.png?>">
                                 <?php }?>

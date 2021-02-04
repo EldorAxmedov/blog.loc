@@ -1,0 +1,1412 @@
+2021-01-22 09:06:38 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/uz/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\view.php:36
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:82
+2021-01-22 09:06:38 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/ru/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\view.php:36
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:82
+2021-01-22 09:06:37 [127.0.0.1][3][-][info][application] $_GET = [
+    'r' => 'post/view'
+    'id' => '28'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM\";}'
+    'advanced-backend' => 'sipp6re4om8ls9g80sm2lrmns8dei9r9'
+    '_csrf-backend' => '8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"eS98q0x2H6QyUr_ULXFatq95JPNlgP-y\";}'
+    'advanced-frontend' => 'e93hh7bu4vkohide4d7klnbnjqacik3h'
+    '_language' => '6d7de15cc7d2529daa575359242b58e29e4e528d951ff85b91ed8567feda8868a:2:{i:0;s:9:\"_language\";i:1;s:2:\"uz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://blog.loc/backend/'
+    '__id' => 3
+    'elFinderCaches' => [
+        '_optsMD5' => '195cb8870232907106266a6b11ebefbf'
+        'l1_' => [
+            'rootstat' => []
+            'subdirs' => [
+                'D:\\OpenServer\\domains\\blog.loc\\frontend\\web\\uploads' => false
+            ]
+        ]
+        'archivers' => [
+            'create' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-cf'
+                    'ext' => 'tar'
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveZip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+            'extract' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-xf'
+                    'ext' => 'tar'
+                    'toSpec' => '-C '
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveUnzip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+        ]
+        'videoLib' => ''
+        ':LAST_ACTIVITY' => 1611121282
+    ]
+    'elFinderNetVolumes' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.loc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36 OPR/67.0.3575.137'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog.loc/backend/index.php?r=post%2Fupdate&id=28'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM%22%3B%7D; advanced-backend=sipp6re4om8ls9g80sm2lrmns8dei9r9; _csrf-backend=8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22eS98q0x2H6QyUr_ULXFatq95JPNlgP-y%22%3B%7D; advanced-frontend=e93hh7bu4vkohide4d7klnbnjqacik3h; _language=6d7de15cc7d2529daa575359242b58e29e4e528d951ff85b91ed8567feda8868a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_language%22%3Bi%3A1%3Bs%3A2%3A%22uz%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.4\\ext;d:\\openserver\\modules\\php\\PHP_7.4\\pear;d:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.4;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MariaDB-10.3\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blog.loc/backend/web/index.php'
+    'REMOTE_PORT' => '50090'
+    'REDIRECT_URL' => '/backend/index.php'
+    'REDIRECT_QUERY_STRING' => 'r=post%2Fview&id=28'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fview&id=28'
+    'REQUEST_URI' => '/backend/index.php?r=post%2Fview&id=28'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1611295596.493
+    'REQUEST_TIME' => 1611295596
+    'argv' => [
+        0 => 'r=post%2Fview&id=28'
+    ]
+    'argc' => 1
+]
+2021-01-22 09:07:14 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/uz/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\_form.php:31
+    in D:\OpenServer\domains\blog.loc\backend\views\post\create.php:17
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:115
+2021-01-22 09:07:14 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/ru/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\_form.php:31
+    in D:\OpenServer\domains\blog.loc\backend\views\post\create.php:17
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:115
+2021-01-22 09:07:14 [127.0.0.1][3][-][info][application] $_GET = [
+    'r' => 'post/create'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM\";}'
+    'advanced-backend' => 'sipp6re4om8ls9g80sm2lrmns8dei9r9'
+    '_csrf-backend' => '8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"eS98q0x2H6QyUr_ULXFatq95JPNlgP-y\";}'
+    'advanced-frontend' => 'e93hh7bu4vkohide4d7klnbnjqacik3h'
+    '_language' => '6d7de15cc7d2529daa575359242b58e29e4e528d951ff85b91ed8567feda8868a:2:{i:0;s:9:\"_language\";i:1;s:2:\"uz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://blog.loc/backend/'
+    '__id' => 3
+    'elFinderCaches' => [
+        '_optsMD5' => '195cb8870232907106266a6b11ebefbf'
+        'l1_' => [
+            'rootstat' => []
+            'subdirs' => [
+                'D:\\OpenServer\\domains\\blog.loc\\frontend\\web\\uploads' => false
+            ]
+        ]
+        'archivers' => [
+            'create' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-cf'
+                    'ext' => 'tar'
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveZip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+            'extract' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-xf'
+                    'ext' => 'tar'
+                    'toSpec' => '-C '
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveUnzip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+        ]
+        'videoLib' => ''
+        ':LAST_ACTIVITY' => 1611121282
+    ]
+    'elFinderNetVolumes' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.loc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36 OPR/67.0.3575.137'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog.loc/backend/index.php?r=post'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM%22%3B%7D; advanced-backend=sipp6re4om8ls9g80sm2lrmns8dei9r9; _csrf-backend=8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22eS98q0x2H6QyUr_ULXFatq95JPNlgP-y%22%3B%7D; advanced-frontend=e93hh7bu4vkohide4d7klnbnjqacik3h; _language=6d7de15cc7d2529daa575359242b58e29e4e528d951ff85b91ed8567feda8868a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_language%22%3Bi%3A1%3Bs%3A2%3A%22uz%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.4\\ext;d:\\openserver\\modules\\php\\PHP_7.4\\pear;d:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.4;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MariaDB-10.3\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blog.loc/backend/web/index.php'
+    'REMOTE_PORT' => '50091'
+    'REDIRECT_URL' => '/backend/index.php'
+    'REDIRECT_QUERY_STRING' => 'r=post%2Fcreate'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fcreate'
+    'REQUEST_URI' => '/backend/index.php?r=post%2Fcreate'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1611295634.448
+    'REQUEST_TIME' => 1611295634
+    'argv' => [
+        0 => 'r=post%2Fcreate'
+    ]
+    'argc' => 1
+]
+2021-01-22 09:18:35 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/uz/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\view.php:36
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:82
+2021-01-22 09:18:35 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/ru/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\view.php:36
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:82
+2021-01-22 09:18:35 [127.0.0.1][3][-][info][application] $_GET = [
+    'r' => 'post/view'
+    'id' => '29'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM\";}'
+    'advanced-backend' => 'sipp6re4om8ls9g80sm2lrmns8dei9r9'
+    '_csrf-backend' => '8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"eS98q0x2H6QyUr_ULXFatq95JPNlgP-y\";}'
+    'advanced-frontend' => 'e93hh7bu4vkohide4d7klnbnjqacik3h'
+    '_language' => '6d7de15cc7d2529daa575359242b58e29e4e528d951ff85b91ed8567feda8868a:2:{i:0;s:9:\"_language\";i:1;s:2:\"uz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://blog.loc/backend/'
+    '__id' => 3
+    'elFinderCaches' => [
+        '_optsMD5' => '195cb8870232907106266a6b11ebefbf'
+        'l1_' => [
+            'rootstat' => []
+            'subdirs' => [
+                'D:\\OpenServer\\domains\\blog.loc\\frontend\\web\\uploads' => false
+            ]
+        ]
+        'archivers' => [
+            'create' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-cf'
+                    'ext' => 'tar'
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveZip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+            'extract' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-xf'
+                    'ext' => 'tar'
+                    'toSpec' => '-C '
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveUnzip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+        ]
+        'videoLib' => ''
+        ':LAST_ACTIVITY' => 1611121282
+    ]
+    'elFinderNetVolumes' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.loc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36 OPR/67.0.3575.137'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog.loc/backend/index.php?r=post%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM%22%3B%7D; advanced-backend=sipp6re4om8ls9g80sm2lrmns8dei9r9; _csrf-backend=8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22eS98q0x2H6QyUr_ULXFatq95JPNlgP-y%22%3B%7D; advanced-frontend=e93hh7bu4vkohide4d7klnbnjqacik3h; _language=6d7de15cc7d2529daa575359242b58e29e4e528d951ff85b91ed8567feda8868a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_language%22%3Bi%3A1%3Bs%3A2%3A%22uz%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.4\\ext;d:\\openserver\\modules\\php\\PHP_7.4\\pear;d:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.4;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MariaDB-10.3\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blog.loc/backend/web/index.php'
+    'REMOTE_PORT' => '51547'
+    'REDIRECT_URL' => '/backend/index.php'
+    'REDIRECT_QUERY_STRING' => 'r=post%2Fview&id=29'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fview&id=29'
+    'REQUEST_URI' => '/backend/index.php?r=post%2Fview&id=29'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1611296315.124
+    'REQUEST_TIME' => 1611296315
+    'argv' => [
+        0 => 'r=post%2Fview&id=29'
+    ]
+    'argc' => 1
+]
+2021-01-22 09:18:38 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/uz/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\_form.php:31
+    in D:\OpenServer\domains\blog.loc\backend\views\post\update.php:18
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:164
+2021-01-22 09:18:38 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/ru/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\_form.php:31
+    in D:\OpenServer\domains\blog.loc\backend\views\post\update.php:18
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:164
+2021-01-22 09:18:37 [127.0.0.1][3][-][info][application] $_GET = [
+    'r' => 'post/update'
+    'id' => '29'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM\";}'
+    'advanced-backend' => 'sipp6re4om8ls9g80sm2lrmns8dei9r9'
+    '_csrf-backend' => '8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"eS98q0x2H6QyUr_ULXFatq95JPNlgP-y\";}'
+    'advanced-frontend' => 'e93hh7bu4vkohide4d7klnbnjqacik3h'
+    '_language' => '6d7de15cc7d2529daa575359242b58e29e4e528d951ff85b91ed8567feda8868a:2:{i:0;s:9:\"_language\";i:1;s:2:\"uz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://blog.loc/backend/'
+    '__id' => 3
+    'elFinderCaches' => [
+        '_optsMD5' => '195cb8870232907106266a6b11ebefbf'
+        'l1_' => [
+            'rootstat' => []
+            'subdirs' => [
+                'D:\\OpenServer\\domains\\blog.loc\\frontend\\web\\uploads' => false
+            ]
+        ]
+        'archivers' => [
+            'create' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-cf'
+                    'ext' => 'tar'
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveZip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+            'extract' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-xf'
+                    'ext' => 'tar'
+                    'toSpec' => '-C '
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveUnzip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+        ]
+        'videoLib' => ''
+        ':LAST_ACTIVITY' => 1611121282
+    ]
+    'elFinderNetVolumes' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.loc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36 OPR/67.0.3575.137'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog.loc/backend/index.php?r=post%2Fview&id=29'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM%22%3B%7D; advanced-backend=sipp6re4om8ls9g80sm2lrmns8dei9r9; _csrf-backend=8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22eS98q0x2H6QyUr_ULXFatq95JPNlgP-y%22%3B%7D; advanced-frontend=e93hh7bu4vkohide4d7klnbnjqacik3h; _language=6d7de15cc7d2529daa575359242b58e29e4e528d951ff85b91ed8567feda8868a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_language%22%3Bi%3A1%3Bs%3A2%3A%22uz%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.4\\ext;d:\\openserver\\modules\\php\\PHP_7.4\\pear;d:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.4;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MariaDB-10.3\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blog.loc/backend/web/index.php'
+    'REMOTE_PORT' => '51547'
+    'REDIRECT_URL' => '/backend/index.php'
+    'REDIRECT_QUERY_STRING' => 'r=post%2Fupdate&id=29'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fupdate&id=29'
+    'REQUEST_URI' => '/backend/index.php?r=post%2Fupdate&id=29'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1611296317.944
+    'REQUEST_TIME' => 1611296317
+    'argv' => [
+        0 => 'r=post%2Fupdate&id=29'
+    ]
+    'argc' => 1
+]
+2021-01-22 09:22:46 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/uz/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\view.php:36
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:82
+2021-01-22 09:22:46 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/ru/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\view.php:36
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:82
+2021-01-22 09:22:46 [127.0.0.1][3][-][info][application] $_GET = [
+    'r' => 'post/view'
+    'id' => '29'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM\";}'
+    'advanced-backend' => 'sipp6re4om8ls9g80sm2lrmns8dei9r9'
+    '_csrf-backend' => '8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"eS98q0x2H6QyUr_ULXFatq95JPNlgP-y\";}'
+    'advanced-frontend' => 'e93hh7bu4vkohide4d7klnbnjqacik3h'
+    '_language' => '6d7de15cc7d2529daa575359242b58e29e4e528d951ff85b91ed8567feda8868a:2:{i:0;s:9:\"_language\";i:1;s:2:\"uz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://blog.loc/backend/'
+    '__id' => 3
+    'elFinderCaches' => [
+        '_optsMD5' => '195cb8870232907106266a6b11ebefbf'
+        'l1_' => [
+            'rootstat' => [
+                '123e0f99fae563a64b8c2d560d20e0a8' => [
+                    'isowner' => false
+                    'ts' => 1611296499
+                    'mime' => 'directory'
+                    'read' => 1
+                    'write' => 1
+                    'size' => 0
+                    'hash' => 'l1_XA'
+                    'name' => 'images'
+                    'rootRev' => ''
+                    'options' => [
+                        'path' => ''
+                        'url' => ''
+                        'tmbUrl' => ''
+                        'disabled' => []
+                        'separator' => '\\'
+                        'copyOverwrite' => 1
+                        'uploadOverwrite' => 1
+                        'uploadMaxSize' => 9223372036854775807
+                        'uploadMaxConn' => 3
+                        'uploadMime' => [
+                            'firstOrder' => 'deny'
+                            'allow' => []
+                            'deny' => []
+                        ]
+                        'dispInlineRegex' => '^(?:(?:video|audio)|image/(?!.+\\+xml)|application/(?:ogg|x-mpegURL|dash\\+xml)|(?:text/plain|application/pdf)$)'
+                        'jpgQuality' => 100
+                        'archivers' => [
+                            'create' => []
+                            'extract' => []
+                            'createext' => []
+                        ]
+                        'uiCmdMap' => []
+                        'syncChkAsTs' => 1
+                        'syncMinMs' => 0
+                        'i18nFolderName' => 0
+                        'tmbCrop' => 1
+                        'tmbReqCustomData' => false
+                        'substituteImg' => true
+                        'onetimeUrl' => false
+                        'csscls' => 'elfinder-navbar-root-local'
+                    ]
+                    'volumeid' => 'l1_'
+                    'locked' => 1
+                ]
+            ]
+            'subdirs' => [
+                'D:\\OpenServer\\domains\\blog.loc\\frontend\\web\\uploads' => false
+            ]
+        ]
+        'archivers' => [
+            'create' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-cf'
+                    'ext' => 'tar'
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveZip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+            'extract' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-xf'
+                    'ext' => 'tar'
+                    'toSpec' => '-C '
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveUnzip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+        ]
+        'videoLib' => ''
+        ':LAST_ACTIVITY' => 1611296548
+    ]
+    'elFinderNetVolumes' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.loc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36 OPR/67.0.3575.137'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog.loc/backend/index.php?r=post%2Fupdate&id=29'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM%22%3B%7D; advanced-backend=sipp6re4om8ls9g80sm2lrmns8dei9r9; _csrf-backend=8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22eS98q0x2H6QyUr_ULXFatq95JPNlgP-y%22%3B%7D; advanced-frontend=e93hh7bu4vkohide4d7klnbnjqacik3h; _language=6d7de15cc7d2529daa575359242b58e29e4e528d951ff85b91ed8567feda8868a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_language%22%3Bi%3A1%3Bs%3A2%3A%22uz%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.4\\ext;d:\\openserver\\modules\\php\\PHP_7.4\\pear;d:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.4;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MariaDB-10.3\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blog.loc/backend/web/index.php'
+    'REMOTE_PORT' => '51808'
+    'REDIRECT_URL' => '/backend/index.php'
+    'REDIRECT_QUERY_STRING' => 'r=post%2Fview&id=29'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fview&id=29'
+    'REQUEST_URI' => '/backend/index.php?r=post%2Fview&id=29'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1611296566.416
+    'REQUEST_TIME' => 1611296566
+    'argv' => [
+        0 => 'r=post%2Fview&id=29'
+    ]
+    'argc' => 1
+]
+2021-01-22 09:29:52 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/uz/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\_form.php:31
+    in D:\OpenServer\domains\blog.loc\backend\views\post\update.php:18
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:164
+2021-01-22 09:29:52 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/ru/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\_form.php:31
+    in D:\OpenServer\domains\blog.loc\backend\views\post\update.php:18
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:164
+2021-01-22 09:29:52 [127.0.0.1][3][-][info][application] $_GET = [
+    'r' => 'post/update'
+    'id' => '29'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM\";}'
+    'advanced-backend' => 'sipp6re4om8ls9g80sm2lrmns8dei9r9'
+    '_csrf-backend' => '8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"eS98q0x2H6QyUr_ULXFatq95JPNlgP-y\";}'
+    'advanced-frontend' => 'e93hh7bu4vkohide4d7klnbnjqacik3h'
+    '_language' => 'f1c20ce2fb13ec542ccfff836e5c95e5e25a50701b06c5c629087e66f5c5056da:2:{i:0;s:9:\"_language\";i:1;s:2:\"ru\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://blog.loc/backend/'
+    '__id' => 3
+    'elFinderCaches' => [
+        '_optsMD5' => '195cb8870232907106266a6b11ebefbf'
+        'l1_' => [
+            'rootstat' => [
+                '123e0f99fae563a64b8c2d560d20e0a8' => [
+                    'isowner' => false
+                    'ts' => 1611296499
+                    'mime' => 'directory'
+                    'read' => 1
+                    'write' => 1
+                    'size' => 0
+                    'hash' => 'l1_XA'
+                    'name' => 'images'
+                    'rootRev' => ''
+                    'options' => [
+                        'path' => ''
+                        'url' => ''
+                        'tmbUrl' => ''
+                        'disabled' => []
+                        'separator' => '\\'
+                        'copyOverwrite' => 1
+                        'uploadOverwrite' => 1
+                        'uploadMaxSize' => 9223372036854775807
+                        'uploadMaxConn' => 3
+                        'uploadMime' => [
+                            'firstOrder' => 'deny'
+                            'allow' => []
+                            'deny' => []
+                        ]
+                        'dispInlineRegex' => '^(?:(?:video|audio)|image/(?!.+\\+xml)|application/(?:ogg|x-mpegURL|dash\\+xml)|(?:text/plain|application/pdf)$)'
+                        'jpgQuality' => 100
+                        'archivers' => [
+                            'create' => []
+                            'extract' => []
+                            'createext' => []
+                        ]
+                        'uiCmdMap' => []
+                        'syncChkAsTs' => 1
+                        'syncMinMs' => 0
+                        'i18nFolderName' => 0
+                        'tmbCrop' => 1
+                        'tmbReqCustomData' => false
+                        'substituteImg' => true
+                        'onetimeUrl' => false
+                        'csscls' => 'elfinder-navbar-root-local'
+                    ]
+                    'volumeid' => 'l1_'
+                    'locked' => 1
+                ]
+            ]
+            'subdirs' => [
+                'D:\\OpenServer\\domains\\blog.loc\\frontend\\web\\uploads' => false
+            ]
+        ]
+        'archivers' => [
+            'create' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-cf'
+                    'ext' => 'tar'
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveZip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+            'extract' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-xf'
+                    'ext' => 'tar'
+                    'toSpec' => '-C '
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveUnzip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+        ]
+        'videoLib' => ''
+        ':LAST_ACTIVITY' => 1611296548
+    ]
+    'elFinderNetVolumes' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.loc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36 OPR/67.0.3575.137'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog.loc/backend/index.php?r=post%2Fview&id=29'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM%22%3B%7D; advanced-backend=sipp6re4om8ls9g80sm2lrmns8dei9r9; _csrf-backend=8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22eS98q0x2H6QyUr_ULXFatq95JPNlgP-y%22%3B%7D; advanced-frontend=e93hh7bu4vkohide4d7klnbnjqacik3h; _language=f1c20ce2fb13ec542ccfff836e5c95e5e25a50701b06c5c629087e66f5c5056da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_language%22%3Bi%3A1%3Bs%3A2%3A%22ru%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.4\\ext;d:\\openserver\\modules\\php\\PHP_7.4\\pear;d:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.4;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MariaDB-10.3\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blog.loc/backend/web/index.php'
+    'REMOTE_PORT' => '52750'
+    'REDIRECT_URL' => '/backend/index.php'
+    'REDIRECT_QUERY_STRING' => 'r=post%2Fupdate&id=29'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fupdate&id=29'
+    'REQUEST_URI' => '/backend/index.php?r=post%2Fupdate&id=29'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1611296992.811
+    'REQUEST_TIME' => 1611296992
+    'argv' => [
+        0 => 'r=post%2Fupdate&id=29'
+    ]
+    'argc' => 1
+]
+2021-01-22 09:32:59 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/uz/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\view.php:36
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:82
+2021-01-22 09:32:59 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/ru/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\view.php:36
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:82
+2021-01-22 09:32:58 [127.0.0.1][3][-][info][application] $_GET = [
+    'r' => 'post/view'
+    'id' => '29'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM\";}'
+    'advanced-backend' => 'sipp6re4om8ls9g80sm2lrmns8dei9r9'
+    '_csrf-backend' => '8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"eS98q0x2H6QyUr_ULXFatq95JPNlgP-y\";}'
+    'advanced-frontend' => 'e93hh7bu4vkohide4d7klnbnjqacik3h'
+    '_language' => 'f1c20ce2fb13ec542ccfff836e5c95e5e25a50701b06c5c629087e66f5c5056da:2:{i:0;s:9:\"_language\";i:1;s:2:\"ru\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://blog.loc/backend/'
+    '__id' => 3
+    'elFinderCaches' => [
+        '_optsMD5' => '195cb8870232907106266a6b11ebefbf'
+        'l1_' => [
+            'rootstat' => []
+            'subdirs' => [
+                'D:\\OpenServer\\domains\\blog.loc\\frontend\\web\\uploads' => false
+            ]
+        ]
+        'archivers' => [
+            'create' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-cf'
+                    'ext' => 'tar'
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveZip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+            'extract' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-xf'
+                    'ext' => 'tar'
+                    'toSpec' => '-C '
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveUnzip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+        ]
+        'videoLib' => ''
+        ':LAST_ACTIVITY' => 1611297068
+    ]
+    'elFinderNetVolumes' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.loc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36 OPR/67.0.3575.137'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog.loc/backend/index.php?r=post%2Fupdate&id=29'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM%22%3B%7D; advanced-backend=sipp6re4om8ls9g80sm2lrmns8dei9r9; _csrf-backend=8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22eS98q0x2H6QyUr_ULXFatq95JPNlgP-y%22%3B%7D; advanced-frontend=e93hh7bu4vkohide4d7klnbnjqacik3h; _language=f1c20ce2fb13ec542ccfff836e5c95e5e25a50701b06c5c629087e66f5c5056da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_language%22%3Bi%3A1%3Bs%3A2%3A%22ru%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.4\\ext;d:\\openserver\\modules\\php\\PHP_7.4\\pear;d:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.4;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MariaDB-10.3\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blog.loc/backend/web/index.php'
+    'REMOTE_PORT' => '52814'
+    'REDIRECT_URL' => '/backend/index.php'
+    'REDIRECT_QUERY_STRING' => 'r=post%2Fview&id=29'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fview&id=29'
+    'REQUEST_URI' => '/backend/index.php?r=post%2Fview&id=29'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1611297178.929
+    'REQUEST_TIME' => 1611297178
+    'argv' => [
+        0 => 'r=post%2Fview&id=29'
+    ]
+    'argc' => 1
+]
+2021-01-22 09:33:40 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/uz/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\_form.php:31
+    in D:\OpenServer\domains\blog.loc\backend\views\post\update.php:18
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:164
+2021-01-22 09:33:40 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/ru/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\_form.php:31
+    in D:\OpenServer\domains\blog.loc\backend\views\post\update.php:18
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:164
+2021-01-22 09:33:40 [127.0.0.1][3][-][info][application] $_GET = [
+    'r' => 'post/update'
+    'id' => '29'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM\";}'
+    'advanced-backend' => 'sipp6re4om8ls9g80sm2lrmns8dei9r9'
+    '_csrf-backend' => '8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"eS98q0x2H6QyUr_ULXFatq95JPNlgP-y\";}'
+    'advanced-frontend' => 'e93hh7bu4vkohide4d7klnbnjqacik3h'
+    '_language' => '6d7de15cc7d2529daa575359242b58e29e4e528d951ff85b91ed8567feda8868a:2:{i:0;s:9:\"_language\";i:1;s:2:\"uz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://blog.loc/backend/'
+    '__id' => 3
+    'elFinderCaches' => [
+        '_optsMD5' => '195cb8870232907106266a6b11ebefbf'
+        'l1_' => [
+            'rootstat' => []
+            'subdirs' => [
+                'D:\\OpenServer\\domains\\blog.loc\\frontend\\web\\uploads' => false
+            ]
+        ]
+        'archivers' => [
+            'create' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-cf'
+                    'ext' => 'tar'
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveZip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+            'extract' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-xf'
+                    'ext' => 'tar'
+                    'toSpec' => '-C '
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveUnzip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+        ]
+        'videoLib' => ''
+        ':LAST_ACTIVITY' => 1611297068
+    ]
+    'elFinderNetVolumes' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.loc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36 OPR/67.0.3575.137'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog.loc/backend/index.php?r=post%2Fview&id=29'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM%22%3B%7D; advanced-backend=sipp6re4om8ls9g80sm2lrmns8dei9r9; _csrf-backend=8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22eS98q0x2H6QyUr_ULXFatq95JPNlgP-y%22%3B%7D; advanced-frontend=e93hh7bu4vkohide4d7klnbnjqacik3h; _language=6d7de15cc7d2529daa575359242b58e29e4e528d951ff85b91ed8567feda8868a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_language%22%3Bi%3A1%3Bs%3A2%3A%22uz%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.4\\ext;d:\\openserver\\modules\\php\\PHP_7.4\\pear;d:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.4;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MariaDB-10.3\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blog.loc/backend/web/index.php'
+    'REMOTE_PORT' => '53086'
+    'REDIRECT_URL' => '/backend/index.php'
+    'REDIRECT_QUERY_STRING' => 'r=post%2Fupdate&id=29'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fupdate&id=29'
+    'REQUEST_URI' => '/backend/index.php?r=post%2Fupdate&id=29'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1611297220.449
+    'REQUEST_TIME' => 1611297220
+    'argv' => [
+        0 => 'r=post%2Fupdate&id=29'
+    ]
+    'argc' => 1
+]
+2021-01-22 09:33:54 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/uz/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\view.php:36
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:82
+2021-01-22 09:33:54 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/ru/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\view.php:36
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:82
+2021-01-22 09:33:54 [127.0.0.1][3][-][info][application] $_GET = [
+    'r' => 'post/view'
+    'id' => '29'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM\";}'
+    'advanced-backend' => 'sipp6re4om8ls9g80sm2lrmns8dei9r9'
+    '_csrf-backend' => '8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"eS98q0x2H6QyUr_ULXFatq95JPNlgP-y\";}'
+    'advanced-frontend' => 'e93hh7bu4vkohide4d7klnbnjqacik3h'
+    '_language' => '6d7de15cc7d2529daa575359242b58e29e4e528d951ff85b91ed8567feda8868a:2:{i:0;s:9:\"_language\";i:1;s:2:\"uz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://blog.loc/backend/'
+    '__id' => 3
+    'elFinderCaches' => [
+        '_optsMD5' => '195cb8870232907106266a6b11ebefbf'
+        'l1_' => [
+            'rootstat' => []
+            'subdirs' => [
+                'D:\\OpenServer\\domains\\blog.loc\\frontend\\web\\uploads' => false
+            ]
+        ]
+        'archivers' => [
+            'create' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-cf'
+                    'ext' => 'tar'
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveZip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+            'extract' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-xf'
+                    'ext' => 'tar'
+                    'toSpec' => '-C '
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveUnzip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+        ]
+        'videoLib' => ''
+        ':LAST_ACTIVITY' => 1611297068
+    ]
+    'elFinderNetVolumes' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.loc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36 OPR/67.0.3575.137'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog.loc/backend/index.php?r=post%2Fupdate&id=29'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM%22%3B%7D; advanced-backend=sipp6re4om8ls9g80sm2lrmns8dei9r9; _csrf-backend=8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22eS98q0x2H6QyUr_ULXFatq95JPNlgP-y%22%3B%7D; advanced-frontend=e93hh7bu4vkohide4d7klnbnjqacik3h; _language=6d7de15cc7d2529daa575359242b58e29e4e528d951ff85b91ed8567feda8868a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_language%22%3Bi%3A1%3Bs%3A2%3A%22uz%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.4\\ext;d:\\openserver\\modules\\php\\PHP_7.4\\pear;d:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.4;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MariaDB-10.3\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blog.loc/backend/web/index.php'
+    'REMOTE_PORT' => '53086'
+    'REDIRECT_URL' => '/backend/index.php'
+    'REDIRECT_QUERY_STRING' => 'r=post%2Fview&id=29'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fview&id=29'
+    'REQUEST_URI' => '/backend/index.php?r=post%2Fview&id=29'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1611297234.878
+    'REQUEST_TIME' => 1611297234
+    'argv' => [
+        0 => 'r=post%2Fview&id=29'
+    ]
+    'argc' => 1
+]
+2021-01-23 07:31:42 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/uz/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\view.php:36
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:82
+2021-01-23 07:31:42 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/ru/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\view.php:36
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:82
+2021-01-23 07:31:41 [127.0.0.1][3][-][info][application] $_GET = [
+    'r' => 'post/view'
+    'id' => '29'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM\";}'
+    'advanced-backend' => 'sipp6re4om8ls9g80sm2lrmns8dei9r9'
+    '_csrf-backend' => '8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"eS98q0x2H6QyUr_ULXFatq95JPNlgP-y\";}'
+    'advanced-frontend' => 'e93hh7bu4vkohide4d7klnbnjqacik3h'
+    '_language' => '6d7de15cc7d2529daa575359242b58e29e4e528d951ff85b91ed8567feda8868a:2:{i:0;s:9:\"_language\";i:1;s:2:\"uz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://blog.loc/backend/'
+    '__id' => 3
+    'elFinderCaches' => [
+        '_optsMD5' => '195cb8870232907106266a6b11ebefbf'
+        'l1_' => [
+            'rootstat' => []
+            'subdirs' => [
+                'D:\\OpenServer\\domains\\blog.loc\\frontend\\web\\uploads' => false
+            ]
+        ]
+        'archivers' => [
+            'create' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-cf'
+                    'ext' => 'tar'
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveZip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+            'extract' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-xf'
+                    'ext' => 'tar'
+                    'toSpec' => '-C '
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveUnzip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+        ]
+        'videoLib' => ''
+        ':LAST_ACTIVITY' => 1611297068
+    ]
+    'elFinderNetVolumes' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.loc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36 OPR/67.0.3575.137'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog.loc/backend/index.php?r=post%2Fupdate&id=29'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM%22%3B%7D; advanced-backend=sipp6re4om8ls9g80sm2lrmns8dei9r9; _csrf-backend=8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22eS98q0x2H6QyUr_ULXFatq95JPNlgP-y%22%3B%7D; advanced-frontend=e93hh7bu4vkohide4d7klnbnjqacik3h; _language=6d7de15cc7d2529daa575359242b58e29e4e528d951ff85b91ed8567feda8868a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_language%22%3Bi%3A1%3Bs%3A2%3A%22uz%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.4\\ext;d:\\openserver\\modules\\php\\PHP_7.4\\pear;d:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.4;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MariaDB-10.3\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blog.loc/backend/web/index.php'
+    'REMOTE_PORT' => '52352'
+    'REDIRECT_URL' => '/backend/index.php'
+    'REDIRECT_QUERY_STRING' => 'r=post%2Fview&id=29'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fview&id=29'
+    'REQUEST_URI' => '/backend/index.php?r=post%2Fview&id=29'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1611376300.253
+    'REQUEST_TIME' => 1611376300
+    'argv' => [
+        0 => 'r=post%2Fview&id=29'
+    ]
+    'argc' => 1
+]
+2021-01-23 14:22:20 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/uz/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\view.php:36
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:82
+2021-01-23 14:22:20 [127.0.0.1][3][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: D:\OpenServer\domains\blog.loc\backend/messages/ru/yii.php
+    in D:\OpenServer\domains\blog.loc\backend\views\post\view.php:36
+    in D:\OpenServer\domains\blog.loc\backend\controllers\PostController.php:82
+2021-01-23 14:22:18 [127.0.0.1][3][-][info][application] $_GET = [
+    'r' => 'post/view'
+    'id' => '29'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf-frontend' => '433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM\";}'
+    'advanced-backend' => 'sipp6re4om8ls9g80sm2lrmns8dei9r9'
+    '_csrf-backend' => '8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"eS98q0x2H6QyUr_ULXFatq95JPNlgP-y\";}'
+    'advanced-frontend' => 'e93hh7bu4vkohide4d7klnbnjqacik3h'
+    '_language' => '6d7de15cc7d2529daa575359242b58e29e4e528d951ff85b91ed8567feda8868a:2:{i:0;s:9:\"_language\";i:1;s:2:\"uz\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => 'http://blog.loc/backend/'
+    '__id' => 3
+    'elFinderCaches' => [
+        '_optsMD5' => '195cb8870232907106266a6b11ebefbf'
+        'l1_' => [
+            'rootstat' => []
+            'subdirs' => [
+                'D:\\OpenServer\\domains\\blog.loc\\frontend\\web\\uploads' => false
+            ]
+        ]
+        'archivers' => [
+            'create' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-cf'
+                    'ext' => 'tar'
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveZip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+            'extract' => [
+                'application/x-tar' => [
+                    'cmd' => 'tar'
+                    'argc' => '-xf'
+                    'ext' => 'tar'
+                    'toSpec' => '-C '
+                ]
+                'application/zip' => [
+                    'cmd' => 'phpfunction'
+                    'argc' => [
+                        0 => 'self'
+                        1 => 'zipArchiveUnzip'
+                    ]
+                    'ext' => 'zip'
+                ]
+            ]
+        ]
+        'videoLib' => ''
+        ':LAST_ACTIVITY' => 1611297068
+    ]
+    'elFinderNetVolumes' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'blog.loc'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36 OPR/67.0.3575.137'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_REFERER' => 'http://blog.loc/backend/index.php?r=post%2Fupdate&id=29'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => '_csrf-frontend=433b021a58684a4c32ea0aea0b30fca332f6d8fe726c5d0b7cc444644df1490da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22eHQXkX4N0PfQBGuOpAK1wp-f7nBQC7aM%22%3B%7D; advanced-backend=sipp6re4om8ls9g80sm2lrmns8dei9r9; _csrf-backend=8ef9d04a652ad6620592be15df1775461ee573ca516b4eb3a21cd94d7eeff7b1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22eS98q0x2H6QyUr_ULXFatq95JPNlgP-y%22%3B%7D; advanced-frontend=e93hh7bu4vkohide4d7klnbnjqacik3h; _language=6d7de15cc7d2529daa575359242b58e29e4e528d951ff85b91ed8567feda8868a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_language%22%3Bi%3A1%3Bs%3A2%3A%22uz%22%3B%7D'
+    'PATH' => 'd:\\openserver\\modules\\php\\PHP_7.4\\ext;d:\\openserver\\modules\\php\\PHP_7.4\\pear;d:\\openserver\\modules\\php\\PHP_7.4\\pear\\bin;d:\\openserver\\modules\\php\\PHP_7.4;d:\\openserver\\modules\\wget\\bin;d:\\openserver\\modules\\database\\MariaDB-10.3\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1\\bin;d:\\openserver\\modules\\http\\Apache_2.4-PHP_7.0-7.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'blog.loc'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/OpenServer/domains/blog.loc'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'D:/OpenServer/domains/blog.loc/backend/web/index.php'
+    'REMOTE_PORT' => '50235'
+    'REDIRECT_URL' => '/backend/index.php'
+    'REDIRECT_QUERY_STRING' => 'r=post%2Fview&id=29'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=post%2Fview&id=29'
+    'REQUEST_URI' => '/backend/index.php?r=post%2Fview&id=29'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1611400938.174
+    'REQUEST_TIME' => 1611400938
+    'argv' => [
+        0 => 'r=post%2Fview&id=29'
+    ]
+    'argc' => 1
+]

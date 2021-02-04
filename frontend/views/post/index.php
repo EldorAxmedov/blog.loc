@@ -12,12 +12,13 @@ use yii\imagine\Image;
                     <div class="col-sm-6 col-xs-12 col fea">
                         <div class="blog-wrap mb-30">
                             <div class="blog-img">
-                                <?php //$image = Yii::getAlias("@frontend/web/uploads/".$all->img);
-                                //$image2 = Image::thumbnail($image, 400, 220)
-                                //->save(Yii::getAlias("@frontend/web/images/post/index/".$all->img), ['quality' => 70]);
+                                <?php $image = Yii::getAlias('@frontend/web/uploads/');
+                                $imagepost=Yii::getAlias('@frontend/web/images/post/news/');
+                                $imagine=Image::thumbnail(($image . $all->img), 300, 150)
+                                    ->save(($imagepost . $all->img), ['quality' => 70]);
                                 ?>
                                 <?php if($all->img){?>
-                                <img src="/uploads/<?=$all->img?>">
+                                <img src="/images/post/news/<?=$all->img?>">
                                 <?php }else{?>
                                 <img src="/images/about.png?>">
                                 <?php }?>
